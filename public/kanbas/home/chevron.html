@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet" />
+      <title>Black Sidebar with List</title>
+      <style>
+         .black-sidebar {
+         background-color: #000;
+         color: #fff;
+         height: 100vh; 
+         padding: 15px;
+         overflow-y: auto;
+         }
+         .nav-item {
+         padding: 10px;
+         list-style: none;
+         }
+         .nav-link {
+         color: #fff;
+         text-decoration: none;
+         margin: 1px 0;
+         padding: 2px 10px;
+         display: flex;
+         flex-direction: row; 
+         align-items: center; 
+         justify-content: space-between; 
+         }
+         .nav-link:hover {
+         text-decoration: underline;
+         }
+         .nav-link .far {
+         color: red;
+         }
+         .nav-link .fas {
+         color: red;
+         }
+         .white-icon {
+         color: white !important;
+         }
+         .white-square {
+         background-color: #fff;
+         }
+         .white-square .nav-link {
+         color: red;
+         }
+         .breadcrumb-item a {
+         color: red; 
+         }
+         .breadcrumb-hamburger {
+         display: flex;
+         align-items: center;
+         color: red;
+         }
+         .main-content {
+         padding: 20px; 
+         color: red; 
+         }
+         .main-content h2 {
+         color: red;
+         }
+         .main-content a {
+         color: red; 
+         text-decoration: none;
+         display: block;
+         margin-bottom: 10px; 
+         }
+         .main-content a:hover {
+         text-decoration: underline;
+         }
+         .home-link {
+         color: black !important;
+         border-left: 3px solid black; 
+         padding-left: 10px; 
+         }
+         .top-div {
+         max-height: 80px;
+         position: fixed; 
+         top: 0; 
+         left: 0;
+         width: 100%;
+         background-color: black; 
+         padding: 15px; 
+         }
+      </style>
+   </head>
+   <body>
+      <div class="top-div center">
+         <div href="your-new-page-url.html" target="_blank" class="button" style="color: white;">
+            <a href="/kanbas/home/sandwich.html" style="color: white;"> <i class="fas fa-bars" style="float: left; margin-top: 20px;"></i></a> 
+            <div class="text-center">CS4550.12631.202410<br> Modules</div>
+            <div style="color: white;"><i class="fas fa-glasses" style="float: right; margin-top: -25px; margin-right: 25px;"></i></div>
+            <a href="/kanbas/home/home.html" style="color: white;"><i class="fas fa-times" style="float: right; margin-top: -20px;"></i></a>
+         </div>
+      </div>
+      <div class="main-content">
+         <br><br><br>
+         <a class="nav-link" href="/kanbas/home/home.html"><i class="fas fa-home"></i> Home</a>
+         <a class="nav-link" href="#"><i class="fas fa-book"></i> Modules</a>
+         <a class="nav-link" href="#"><i class="fas fa-comment"></i> Piazza</a>
+         <a class="nav-link" href="#"><i class="fas fa-video"></i> Zoom Meetings</a>
+         <a class="nav-link" href="/kanbas/assignments/index.html"><i class="fas fa-tasks"></i> Assignments</a>
+         <a class="nav-link" href="#"><i class="fas fa-pen"></i> Quizzes</a>
+         <a class="nav-link" href="/kanbas/grades/grades.html"><i class="fas fa-clipboard"></i> Grades</a>
+         <a class="nav-link" href="#"><i class="fas fa-users"></i> People</a>
+         <a class="nav-link" href="#"><i class="fas fa-video"></i> Panopto Video</a>
+         <a class="nav-link" href="#"><i class="fas fa-comments"></i> Discussions</a>
+         <a class="nav-link" href="#"><i class="fas fa-bullhorn"></i> Announcements</a>
+         <a class="nav-link" href="#"><i class="fas fa-file"></i> Pages</a>
+         <a class="nav-link" href="#"><i class="fas fa-file-alt"></i> Files</a>
+         <a class="nav-link" href="#"><i class="fas fa-clipboard-check"></i> Rubrics</a>
+         <a class="nav-link" href="#"><i class="fas fa-check-double"></i> Outcomes</a>
+         <a class="nav-link" href="#"><i class="fas fa-project-diagram"></i> Collaborations</a>
+         <a class="nav-link" href="#"><i class="fas fa-scroll"></i> Syllabus</a>
+         <a class="nav-link" href="#"><i class="fas fa-chart-line"></i> Progress Reports (EAB) Navigate</a>
+         <a class="nav-link" href="#"><i class="fas fa-cog"></i> Settings</a>
+      </div>
+   </body>
+</html>

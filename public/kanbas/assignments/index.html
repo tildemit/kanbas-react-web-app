@@ -1,333 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet" />
-
-    <title>Black Sidebar with List</title>
-    <style>
-        /* Custom CSS for the black sidebar */
-        .black-sidebar {
-            background-color: #000;
-            color: #fff;
-            height: 100vh; /* 100% of the viewport height */
-            padding: 15px;
-            overflow-y: auto;
-        }
-
-        /* Style for the list items */
-        .nav-item {
-            padding: 10px;
-            list-style: none;
-        }
-
-        /* Style for the list items' links */
-        .nav-link {
-            color: #fff;
-            text-decoration: none;
-            margin: 1px 0;
-            padding: 2px 10px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        /* Style for the list items' links on hover */
-        .nav-link:hover {
-            text-decoration: underline;
-        }
-
-        /* Custom CSS to make the icons red */
-        .nav-link .far {
-            color: red;
-        }
-        .nav-link .fas {
-            color: red;
-        }
-        .white-icon {
-            color: white !important;
-        }
-
-        .white-square {
-            background-color: #fff;
-        }
-        .white-square .nav-link {
-            color: red;
-        }
-        .breadcrumb-item a {
-            color: red; /* Change breadcrumb link color to red */
-        }
-        .breadcrumb-hamburger {
-            display: flex;
-            align-items: center;
-            color: red;
-        }
-
-        /* Style for the red links in the main content */
-        .main-content {
-            padding: 20px; /* Add some padding to the main content */
-            color: red; /* Make text in the main content red */
-        }
-
-        /* Style for the header at the top of the main content */
-        .main-content h2 {
-            color: red; /* Make the header text red */
-        }
-
-        /* Style for the red links */
-        .main-content a {
-            color: red; /* Make the links red */
-            text-decoration: none;
-            display: block;
-            margin-bottom: 10px; /* Add space between links */
-        }
-
-        /* Style for the red links on hover */
-        .main-content a:hover {
-            text-decoration: underline;
-        }
-
-        .assignments-link {
-            color: black !important;
-            border-left: 3px solid black; /* Add a black left border */
-            padding-left: 10px; /* Add some left padding for spacing */
-        }
-
-        .assignment-item {
-        border-left: 5px solid green; /* Add a green border to the left */
-        padding-left: 10px; /* Add some padding to space the text from the border */
-    }
-    </style>
-</head>
-<body>
-    <div class="container-fluid">
-        <div class="row">
-            <!-- Black Sidebar (col-3 for Bootstrap 4) -->
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet" />
+      <title>Black Sidebar with List</title>
+      <style>
+         .black-sidebar {
+         background-color: #000;
+         color: #fff;
+         height: 100vh; 
+         padding: 15px;
+         overflow-y: auto;
+         }
+         .nav-item {
+         padding: 10px;
+         list-style: none;
+         }
+         .nav-link {
+         color: #fff;
+         text-decoration: none;
+         margin: 1px 0;
+         padding: 2px 10px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         }
+         .nav-link:hover {
+         text-decoration: underline;
+         }
+         .nav-link .far {
+         color: red;
+         }
+         .nav-link .fas {
+         color: red;
+         }
+         .white-icon {
+         color: white !important;
+         }
+         .white-square {
+         background-color: #fff;
+         }
+         .white-square .nav-link {
+         color: red;
+         }
+         .breadcrumb-item a {
+         color: red; 
+         }
+         .breadcrumb-hamburger {
+         display: flex;
+         align-items: center;
+         color: red;
+         }
+         .main-content {
+         padding: 20px; 
+         color: red; 
+         }
+         .main-content h2 {
+         color: red; 
+         }
+         .main-content a {
+         color: red; 
+         text-decoration: none;
+         display: block;
+         margin-bottom: 10px; 
+         }
+         .main-content a:hover {
+         text-decoration: underline;
+         }
+         .assignments-link {
+         color: black !important;
+         border-left: 3px solid black; 
+         padding-left: 10px; 
+         }
+         .assignment-item {
+         border-left: 5px solid green; 
+         padding-left: 10px; 
+         }
+      </style>
+   </head>
+   <body>
+      <div class="container-fluid">
+         <div class="row">
             <div class="col-md-1 black-sidebar">
-                <!-- Sidebar Content Goes Here -->
-                <h1 class="text-center"><img src="../../images/neu.png" alt="Icon"></h1>
-                <ul class="nav flex-column">
-                    <li class="nav-item text-center">
-                        <a class="nav-link" href="/kanbas/profile/index.html">
-                           <i class="far fa-user fa-lg white-icon"></i><br>
-                           Account</a>
-                    </li>
-                    <li class="nav-item text-center">
-                        <a class="nav-link" href="/kanbas/dashboard/index.html">
-                           <i class="fas fa-chart-bar fa-lg"></i><br>
-                           Dashboard</a>
-                    </li>
-                    <li class="nav-item text-center">
-                        <a class="nav-link" href="/kanbas/courses_navigation/index.html">
-                           <i class="fas fa-book fa-lg"></i><br>
-                           Courses</a>
-                    </li>
-                    <li class="nav-item text-center">
+               <h1 class="text-center"><img src="../../images/neu.png" alt="Icon"></h1>
+               <ul class="nav flex-column">
+                  <li class="nav-item text-center">
+                     <a class="nav-link" href="/kanbas/profile/index.html">
+                     <i class="far fa-user fa-lg white-icon"></i><br>
+                     Account</a>
+                  </li>
+                  <li class="nav-item text-center">
+                     <a class="nav-link" href="/kanbas/dashboard/index.html">
+                     <i class="fas fa-chart-bar fa-lg"></i><br>
+                     Dashboard</a>
+                  </li>
+                  <li class="nav-item text-center white-square">
+                     <a class="nav-link" href="/kanbas/home/home.html">
+                     <i class="fas fa-book fa-lg"></i><br>
+                     Courses</a>
+                  </li>
+                  <li class="nav-item text-center">
                      <a class="nav-link" href="#">
-                        <i class="far fa-calendar fa-lg"></i><br>
-                        Calendar</a>
-                    </li>
-                    <li class="nav-item text-center">
+                     <i class="far fa-calendar fa-lg"></i><br>
+                     Calendar</a>
+                  </li>
+                  <li class="nav-item text-center">
                      <a class="nav-link" href="#">
-                        <i class="fas fa-inbox fa-lg"></i><br>
-                        Inbox</a>
-                    </li>
-                    <li class="nav-item text-center">
+                     <i class="fas fa-inbox fa-lg"></i><br>
+                     Inbox</a>
+                  </li>
+                  <li class="nav-item text-center">
                      <a class="nav-link" href="#">
-                        <i class="far fa-clock fa-lg"></i><br>
-                        History</a>
-                    </li>
-                    <li class="nav-item text-center">
+                     <i class="far fa-clock fa-lg"></i><br>
+                     History</a>
+                  </li>
+                  <li class="nav-item text-center">
                      <a class="nav-link" href="#">
-                        <i class="fas fa-tv fa-lg"></i><br>
-                        Studio</a>
-                    </li>
-                    <li class="nav-item text-center">
+                     <i class="fas fa-tv fa-lg"></i><br>
+                     Studio</a>
+                  </li>
+                  <li class="nav-item text-center">
                      <a class="nav-link" href="#">
-                        <i class="fas fa-arrow-right fa-lg"></i><br>
-                        Commons</a>
-                    </li>
-                    <li class="nav-item text-center">
+                     <i class="fas fa-arrow-right fa-lg"></i><br>
+                     Commons</a>
+                  </li>
+                  <li class="nav-item text-center">
                      <a class="nav-link" href="#">
-                        <i class="fas fa-question fa-lg"></i><br>
-                        Help</a>
-                    </li>
-                </ul>
+                     <i class="fas fa-question fa-lg"></i><br>
+                     Help</a>
+                  </li>
+               </ul>
             </div>
-
-            <!-- Main Content (col-9 for Bootstrap 4) -->
             <div class="col-md-8 order-2 order-md-1 main-content">
-                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                    <ol class="breadcrumb" style="background-color: transparent; margin: 0; padding: 0;">
-                        <li class="breadcrumb-hamburger">
-                            <i class="fas fa-bars" style="margin-right: 10px;"></i> <!-- Hamburger Icon -->
-                        </li>
-                        <li class="breadcrumb-item"><a href="#">CS5610.11744.202310</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Assignments</li>
-
-                        <li class="ml-auto">
-                           <button class="btn float-end" style="background-color: lightgray;"><i class="fas fa-glasses"></i> Student View</button>
-                       </li>
-                    </ol>
-
-                    
-                </nav>
-                <hr class="divider">
-                <div class="row">
-                    <div class="col-md-2">
-                        <a href="#">Home</a>
-                        <a href="#">Modules</a>
-                        <a href="#">Piazza</a>
-                        <a href="#">Zoom Meetings</a>
-                        <a class="assignments-link" href="#">Assignments</a>
-                        <a href="#">Quizzes</a>
-                        <a href="#">Grades</a>
-                        <a href="#">People</a>
-                        <a href="#">Panopto Video</a>
-                        <a href="#">Discussions</a>
-                        <a href="#">Announcements</a>
-                        <a href="#">Pages</a>
-                        <a href="#">Files</a>
-                        <a href="#">Rubrics</a>
-                        <a href="#">Outcomes</a>
-                        <a href="#">Collaborations</a>
-                        <a href="#">Syllabus</a>
-                        <a href="#">Progress Reports <br> (EAB) Navigate</a>
-                        <a href="#">Settings</a>
-                        <!-- Add more red links here -->
-                    </div>
-
-                    <div class="col-md-10 order-2 order-md-1">
+               <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                  <ol class="breadcrumb" style="background-color: transparent; margin: 0; padding: 0;">
+                     <li class="breadcrumb-hamburger">
+                        <i class="fas fa-bars" style="margin-right: 10px;"></i> 
+                     </li>
+                     <li class="breadcrumb-item"><a href="#">CS5610.11744.202310</a></li>
+                     <li class="breadcrumb-item active" aria-current="page">Assignments</li>
+                     <li class="ml-auto">
+                        <button class="btn float-end" style="background-color: lightgray;"><i class="fas fa-glasses"></i> Student View</button>
+                     </li>
+                  </ol>
+               </nav>
+               <hr class="divider">
+               <div class="row">
+                  <div class="col-md-2">
+                     <a href="/kanbas/home/home.html">Home</a>
+                     <a href="#">Modules</a>
+                     <a href="#">Piazza</a>
+                     <a href="#">Zoom Meetings</a>
+                     <a class="assignments-link" href="/kanbas/assignments/index.html">Assignments</a>
+                     <a href="#">Quizzes</a>
+                     <a href="/kanbas/grades/grades.html">Grades</a>
+                     <a href="#">People</a>
+                     <a href="#">Panopto Video</a>
+                     <a href="#">Discussions</a>
+                     <a href="#">Announcements</a>
+                     <a href="#">Pages</a>
+                     <a href="#">Files</a>
+                     <a href="#">Rubrics</a>
+                     <a href="#">Outcomes</a>
+                     <a href="#">Collaborations</a>
+                     <a href="#">Syllabus</a>
+                     <a href="#">Progress Reports <br> (EAB) Navigate</a>
+                     <a href="#">Settings</a>
+                  </div>
+                  <div class="col-md-10 order-2 order-md-1">
                      <div class="list-group">
                         <div class="container">
                            <div class="row">
-                               <div class="col-md-6">
-                                   <div class="input-group mb-3" style="width: 50%;">
-                                       <input type="text" class="form-control w-100" placeholder="Search for Assignment">
-                                   </div>
-                               </div>
-                               <div class="col-md-6">
-                                   <div class="input-group mb-3">
-                                       <!-- Existing button with ml-auto to move it to the right -->
-                                       <button class="btn ml-auto" style="background-color: lightgray;" type="button">+ Group</button>
-                                       <!-- Two more buttons to the right -->
-                                       <button class="btn btn-danger" type="button">+ Assignment</button>
-                                       <button class="btn" style="background-color: lightgray;" type="button"><i class="fas fa-ellipsis-v"></i></button>
-                                   </div>
-                               </div>
+                              <div class="col-md-6">
+                                 <div class="input-group mb-3" style="width: 50%;">
+                                    <input type="text" class="form-control w-100" placeholder="Search for Assignment">
+                                 </div>
+                              </div>
+                              <div class="col-md-6">
+                                 <div class="input-group mb-3">
+                                    <button class="btn ml-auto" style="background-color: lightgray;" type="button">+ Group</button>
+                                    <button class="btn btn-danger" type="button">+ Assignment</button>
+                                    <button class="btn" style="background-color: lightgray;" type="button"><i class="fas fa-ellipsis-v"></i></button>
+                                 </div>
+                              </div>
                            </div>
-                       </div>
-                       
-                       
-                       
-                       
-                       
-                       
-                       
-                       
-                       <!-- Divider -->
-                       <hr style="border-top: 1px solid rgba(0, 0, 0, 0.2); margin: 10px 0;">
-                       <a href="#" class="list-group-item list-group-item-secondary d-flex justify-content-between" style="color: black;">
-                        <div class="d-flex align-items-center">
-                        <i class="fas fa-grip-vertical" style=" margin-right: 10px;"></i>
-                        Assignments
-                    </div>
-                        <div>
-                            <span class="rounded-pill px-2 py-1" style="background-color: transparent; border: 1px solid black;">40% of Total</span>
-                            <i class="fas fa-plus" style="margin-right: 5px;"></i>
-                            <i class="fas fa-ellipsis-v"></i>
                         </div>
-                    </a>
-                    
-                    
-                    
-                    
-                    <a href="#" class="list-group-item d-flex justify-content-between assignment-item" style="color: black;">
-                        <div class="d-flex align-items-center">
-                            <i class="fas fa-grip-vertical" style=" margin-right: 10px;"></i>
-                     <i class="fas fa-pencil-alt" style="color: green; margin-right: 10px;"></i>
-                     <span class="text-left"><b>A1 SETUP</b><br><small>Week 0-SETUP - Week starting on Monday September 5th (9/5/2022) Module |</small><br><small>Due Sep 18, 2022, at 11:59 pm | 100 pts</small></span>
-                        </div>
-                        <div class="d-flex align-items-center">
-                     <i class="fas fa-check-circle" style="color: green; margin-right: 25px;"></i>
-                     <i class="fas fa-ellipsis-v" style="margin-right: 0px;"></i>
-                    </div>
-                 </a>
-                 <a href="#" class="list-group-item d-flex justify-content-between assignment-item" style="color: black;">
-                    <div class="d-flex align-items-center">
-                        <i class="fas fa-grip-vertical" style=" margin-right: 10px;"></i>
-                 <i class="fas fa-pencil-alt" style="color: green; margin-right: 10px;"></i>
-                 <span class="text-left"><b>A2 HTML<br><small>Week 1 - HTML - Week starting on Monday September 12th (9/12/2022) Module |</small><br><small>Due Sep 25, 2022, at 11:59 pm | 100 pts</small></span>
-                    </div>
-                    <div class="d-flex align-items-center">
-                 <i class="fas fa-check-circle" style="color: green; margin-right: 25px;"></i>
-                 <i class="fas fa-ellipsis-v" style="margin-right: 0px;"></i>
-                </div>
-             </a>
-                 <a href="#" class="list-group-item d-flex justify-content-between assignment-item" style="color: black;">
-                    <div class="d-flex align-items-center">
-                        <i class="fas fa-grip-vertical" style=" margin-right: 10px;"></i>
-                 <i class="fas fa-pencil-alt" style="color: green; margin-right: 10px;"></i>
-                 <span class="text-left"><b>A3 CSS<br><small>Week 2-CSS-Week starting on Monday September 19th (9/19/2022) Module |</small><br><small>Due Oct 2, 2022, at 11:59 pm | 100 pts</small></span>
-                    </div>
-                    <div class="d-flex align-items-center">
-                 <i class="fas fa-check-circle" style="color: green; margin-right: 25px;"></i>
-                 <i class="fas fa-ellipsis-v" style="margin-right: 0px;"></i>
-                </div>
-             </a>
-                 <a href="#" class="list-group-item d-flex justify-content-between assignment-item" style="color: black;">
-                    <div class="d-flex align-items-center">
-                        <i class="fas fa-grip-vertical" style=" margin-right: 10px;"></i>
-                 <i class="fas fa-pencil-alt" style="color: green; margin-right: 10px;"></i>
-                 <span class="text-left"><b>A4 BOOTSTRAP<br><small>Week 3 - Bootstrap - Week starting on Monday September 26th (9/26/2022) Module |</small><br><small>Due Oct 10, 2022, at 11:59 pm | 100 pts</small></span>
-                    </div>
-                    <div class="d-flex align-items-center">
-                 <i class="fas fa-check-circle" style="color: green; margin-right: 25px;"></i>
-                 <i class="fas fa-ellipsis-v" style="margin-right: 0px;"></i>
-                </div>
-             </a>
-                 <a href="#" class="list-group-item d-flex justify-content-between assignment-item" style="color: black;">
-                    <div class="d-flex align-items-center">
-                        <i class="fas fa-grip-vertical" style=" margin-right: 10px;"></i>
-                 <i class="fas fa-pencil-alt" style="color: green; margin-right: 10px;"></i>
-                 <span class="text-left"><b>A5 JAVASCRIPT<br><small>Week 4 - JavaScript - Week starting on Monday October 3rd (10/3/2022) Module |</small><br><small>Due Oct 16, 2022, at 11:59 pm | 100 pts</small></span>
-                    </div>
-                    <div class="d-flex align-items-center">
-                 <i class="fas fa-check-circle" style="color: green; margin-right: 25px;"></i>
-                 <i class="fas fa-ellipsis-v" style="margin-right: 0px;"></i>
-                </div>
-             </a>
-            
-                 <a href="#" class="list-group-item d-flex justify-content-between assignment-item" style="color: black;">
-                    <div class="d-flex align-items-center">
-                        <i class="fas fa-grip-vertical" style=" margin-right: 10px;"></i>
-                 <i class="fas fa-pencil-alt" style="color: green; margin-right: 10px;"></i>
-                 <span class="text-left"><b>A6 REACT<br><small>Week 5 - React & Routing - Week starting Monday October 10th (10/10/2022) Module | </small><br><small>Due Oct 23, 2022, at 11:59 pm | 100 pts </small></span>
-                    </div>
-                    <div class="d-flex align-items-center">
-                 <i class="fas fa-check-circle" style="color: green; margin-right: 25px;"></i>
-                 <i class="fas fa-ellipsis-v" style="margin-right: 0px;"></i>
-                </div>
-             </a>
-                 
-                 
-                 
-                 
-                 
-                 
-                 
-                         <!-- Add more modules here with the list-group-item-secondary class -->
+                        <hr style="border-top: 1px solid rgba(0, 0, 0, 0.2); margin: 10px 0;">
+                        <a href="#" class="list-group-item list-group-item-secondary d-flex justify-content-between" style="color: black;">
+                           <div class="d-flex align-items-center">
+                              <i class="fas fa-grip-vertical" style=" margin-right: 10px;"></i>
+                              Assignments
+                           </div>
+                           <div>
+                              <span class="rounded-pill px-2 py-1" style="background-color: transparent; border: 1px solid black;">40% of Total</span>
+                              <i class="fas fa-plus" style="margin-right: 5px;"></i>
+                              <i class="fas fa-ellipsis-v"></i>
+                           </div>
+                        </a>
+                        <a href="/kanbas/assignments/edit.html" class="list-group-item d-flex justify-content-between assignment-item" style="color: black;">
+                           <div class="d-flex align-items-center">
+                              <i class="fas fa-grip-vertical" style=" margin-right: 10px;"></i>
+                              <i class="fas fa-pencil-alt" style="color: green; margin-right: 10px;"></i>
+                              <span class="text-left"><b>A1 SETUP</b><br><small>Week 0-SETUP - Week starting on Monday September 5th (9/5/2022) Module |</small><br><small>Due Sep 18, 2022, at 11:59 pm | 100 pts</small></span>
+                           </div>
+                           <div class="d-flex align-items-center">
+                              <i class="fas fa-check-circle" style="color: green; margin-right: 25px;"></i>
+                              <i class="fas fa-ellipsis-v" style="margin-right: 0px;"></i>
+                           </div>
+                        </a>
+                        <a href="/kanbas/assignments/edit.html" class="list-group-item d-flex justify-content-between assignment-item" style="color: black;">
+                           <div class="d-flex align-items-center">
+                              <i class="fas fa-grip-vertical" style=" margin-right: 10px;"></i>
+                              <i class="fas fa-pencil-alt" style="color: green; margin-right: 10px;"></i>
+                              <span class="text-left"><b>A2 HTML<br><small>Week 1 - HTML - Week starting on Monday September 12th (9/12/2022) Module |</small><br><small>Due Sep 25, 2022, at 11:59 pm | 100 pts</small></span>
+                           </div>
+                           <div class="d-flex align-items-center">
+                              <i class="fas fa-check-circle" style="color: green; margin-right: 25px;"></i>
+                              <i class="fas fa-ellipsis-v" style="margin-right: 0px;"></i>
+                           </div>
+                        </a>
+                        <a href="/kanbas/assignments/edit.html" class="list-group-item d-flex justify-content-between assignment-item" style="color: black;">
+                           <div class="d-flex align-items-center">
+                              <i class="fas fa-grip-vertical" style=" margin-right: 10px;"></i>
+                              <i class="fas fa-pencil-alt" style="color: green; margin-right: 10px;"></i>
+                              <span class="text-left"><b>A3 CSS<br><small>Week 2-CSS-Week starting on Monday September 19th (9/19/2022) Module |</small><br><small>Due Oct 2, 2022, at 11:59 pm | 100 pts</small></span>
+                           </div>
+                           <div class="d-flex align-items-center">
+                              <i class="fas fa-check-circle" style="color: green; margin-right: 25px;"></i>
+                              <i class="fas fa-ellipsis-v" style="margin-right: 0px;"></i>
+                           </div>
+                        </a>
+                        <a href="/kanbas/assignments/edit.html" class="list-group-item d-flex justify-content-between assignment-item" style="color: black;">
+                           <div class="d-flex align-items-center">
+                              <i class="fas fa-grip-vertical" style=" margin-right: 10px;"></i>
+                              <i class="fas fa-pencil-alt" style="color: green; margin-right: 10px;"></i>
+                              <span class="text-left"><b>A4 BOOTSTRAP<br><small>Week 3 - Bootstrap - Week starting on Monday September 26th (9/26/2022) Module |</small><br><small>Due Oct 10, 2022, at 11:59 pm | 100 pts</small></span>
+                           </div>
+                           <div class="d-flex align-items-center">
+                              <i class="fas fa-check-circle" style="color: green; margin-right: 25px;"></i>
+                              <i class="fas fa-ellipsis-v" style="margin-right: 0px;"></i>
+                           </div>
+                        </a>
+                        <a href="/kanbas/assignments/edit.html" class="list-group-item d-flex justify-content-between assignment-item" style="color: black;">
+                           <div class="d-flex align-items-center">
+                              <i class="fas fa-grip-vertical" style=" margin-right: 10px;"></i>
+                              <i class="fas fa-pencil-alt" style="color: green; margin-right: 10px;"></i>
+                              <span class="text-left"><b>A5 JAVASCRIPT<br><small>Week 4 - JavaScript - Week starting on Monday October 3rd (10/3/2022) Module |</small><br><small>Due Oct 16, 2022, at 11:59 pm | 100 pts</small></span>
+                           </div>
+                           <div class="d-flex align-items-center">
+                              <i class="fas fa-check-circle" style="color: green; margin-right: 25px;"></i>
+                              <i class="fas fa-ellipsis-v" style="margin-right: 0px;"></i>
+                           </div>
+                        </a>
+                        <a href="/kanbas/assignments/edit.html" class="list-group-item d-flex justify-content-between assignment-item" style="color: black;">
+                           <div class="d-flex align-items-center">
+                              <i class="fas fa-grip-vertical" style=" margin-right: 10px;"></i>
+                              <i class="fas fa-pencil-alt" style="color: green; margin-right: 10px;"></i>
+                              <span class="text-left"><b>A6 REACT<br><small>Week 5 - React & Routing - Week starting Monday October 10th (10/10/2022) Module | </small><br><small>Due Oct 23, 2022, at 11:59 pm | 100 pts </small></span>
+                           </div>
+                           <div class="d-flex align-items-center">
+                              <i class="fas fa-check-circle" style="color: green; margin-right: 25px;"></i>
+                              <i class="fas fa-ellipsis-v" style="margin-right: 0px;"></i>
+                           </div>
+                        </a>
                      </div>
-                 </div>
-                </div>
-                
+                  </div>
+               </div>
             </div>
-
-            
-        </div>
-    </div>
-</body>
+         </div>
+      </div>
+   </body>
 </html>

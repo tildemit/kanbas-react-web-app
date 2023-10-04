@@ -42,12 +42,20 @@
          color: red;
          }
          .white-icon {
-         color: gray !important;
+         color: lightgray !important;
          }
          .white-square {
          background-color: #fff;
          }
          .white-square .nav-link {
+         color: red;
+         }
+         .breadcrumb-item a {
+         color: red; 
+         }
+         .breadcrumb-hamburger {
+         display: flex;
+         align-items: center;
          color: red;
          }
          
@@ -70,111 +78,86 @@
          .main-content a:hover {
          text-decoration: underline;
          }
-         .profile-link {
+         .home-link {
          color: black !important;
          border-left: 3px solid black; 
          padding-left: 10px; 
          }
+         
+         .top-div {
+         max-height: 80px;
+         display: none; 
+         position: fixed; 
+         top: 0; 
+         left: 0;
+         width: 100%;
+         background-color: black; 
+         padding: 15px; 
+         }
+         .nav-item {
+         margin-bottom: 1px; 
+         }
       </style>
    </head>
    <body>
-      <div class="container-fluid">
-      <div class="row">
-      <div class="col-md-1 col-sm-4 black-sidebar">
-         <h1 class="text-center"><img src="../../images/neu.png" alt="Icon"></h1>
+      <div class="col-md-5 main-content">
          <ul class="nav flex-column">
-            <li class="nav-item text-center white-square">
-               <a class="nav-link" href="/kanbas/profile/index.html">
-               <i class="far fa-user fa-lg white-icon"></i><br>
-               Account
-               </a>
+            <li class="nav-item text-right">
+               <a class="nav-link"  href="/kanbas/home/home.html">
+               <i class="fas fa-times" style="color:black"></i><br></a>
             </li>
             <li class="nav-item text-center">
                <a class="nav-link" href="/kanbas/dashboard/index.html">
                <i class="fas fa-chart-bar fa-lg"></i><br>
-               Dashboard
+               Dashboard</a>
+            </li>
+            <li class="nav-item text-center" style="margin-left: 50px">
+               <a class="nav-link" href="/kanbas/profile/index.html">
+               <i class="far fa-user fa-lg white-icon"></i><br>
+               <span >Account</span>
+               <i class="fas fa-angle-right" style="float: right; color: black;"></i>
                </a>
             </li>
-            <li class="nav-item text-center">
+            <li class="nav-item text-center" style="margin-left: 50px">
                <a class="nav-link" href="/kanbas/home/home.html">
                <i class="fas fa-book fa-lg"></i><br>
-               Courses
+               <span>Courses</span>
+               <i class="fas fa-angle-right" style="float: right; color: black;"></i>
                </a>
             </li>
             <li class="nav-item text-center">
                <a class="nav-link" href="#">
                <i class="far fa-calendar fa-lg"></i><br>
-               Calendar
-               </a>
+               Calendar</a>
             </li>
             <li class="nav-item text-center">
                <a class="nav-link" href="#">
                <i class="fas fa-inbox fa-lg"></i><br>
-               Inbox
-               </a>
-            </li>
-            <li class="nav-item text-center">
-               <a class="nav-link" href="#">
-               <i class="far fa-clock fa-lg"></i><br>
-               History
-               </a>
+               Inbox</a>
             </li>
             <li class="nav-item text-center">
                <a class="nav-link" href="#">
                <i class="fas fa-tv fa-lg"></i><br>
-               Studio
-               </a>
+               Studio</a>
             </li>
             <li class="nav-item text-center">
                <a class="nav-link" href="#">
                <i class="fas fa-arrow-right fa-lg"></i><br>
-               Commons
-               </a>
+               Commons</a>
             </li>
-            <li class="nav-item text-center">
+            <li class="nav-item text-center" style="margin-left: 50px">
+               <a class="nav-link" href="#">
+               <i class="far fa-clock fa-lg"></i><br>
+               <span >History</span>
+               <i class="fas fa-angle-right" style="float: right; color: black;"></i></a>
+            </li>
+            <li class="nav-item text-center" style="margin-left: 50px">
                <a class="nav-link" href="#">
                <i class="fas fa-question fa-lg"></i><br>
-               Help
-               </a>
+               <span >Help</span>
+               <i class="fas fa-angle-right" style="float: right; color: black;"></i></a>
             </li>
          </ul>
       </div>
-      <div class="col-md-11 col-sm-8 main-content">
-         <div style="display: flex; align-items: center;">
-            <i class="fas fa-bars" style="margin-right: 30px;"></i>
-            <div style="color: black;">Jose Annunziato's Profile</div>
-         </div>
-         <hr class="divider">
-         <div class="row">
-            <div class="col-md-4">
-               <a href="#">Notifications</a>
-               <a class="profile-link" href="#">Profile</a>
-               <a href="#">Files</a>
-               <a href="#">Settings</a>
-               <a href="#">ePortfolios</a>
-               <a href="#">Shared Content</a>
-               <a href="#">The Hub</a>
-               <a href="#">Qwickly Course Tools</a>
-               <a href="#">Global Announcements</a>
-            </div>
-            <div class="col-md-6 d-flex justify-content-between align-items-center">
-               <div>
-                  <i class="fas fa-user fa-7x white-icon"></i>
-                  <br><br>
-                  <h3 style="color: black;">Jose Annunizato</h3>
-                  <br>
-                  <h3 style="color: black;">Content</h3>
-                  <p style="color: black; white-space: nowrap;">No registered services, you can add <br> some on the <a href="#" style="display: inline;">settings</a> page.</p>
-                  <br>
-                  <h3 style="color: black;">Biography</h3>
-                  <p style="color: black; white-space: nowrap;">Faculty, Software Engineer, AI, Space, <br> and renewables enthusiast.</p>
-                  <br>
-                  <h3 style="color: black;">Links</h3>
-                  <a href="https://www.youtube.com/@WebDevTV"> Youtube</a>
-               </div>
-               <div class="align-self-start">
-                  <a href="/kanbas/profile/edit.html" class="btn btn-secondary" style="color: black; background-color: lightgray;"><i class="fas fa-pencil-alt"></i>Edit Profile</a>
-               </div>
-            </div>
-         </div>
-      </div>
+   </body>
+</html>

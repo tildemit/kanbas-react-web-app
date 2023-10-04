@@ -1,254 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet" />
-
-
-    <title>Black Sidebar with List</title>
-    <style>
-        /* Custom CSS for the black sidebar */
-        .black-sidebar {
-            background-color: #000;
-            color: #fff;
-            height: 100vh; /* 100% of the viewport height */
-            padding: 15px;
-            overflow-y: auto;
-        }
-
-        /* Style for the list items */
-        .nav-item {
-            padding: 10px;
-            list-style: none;
-        }
-
-        /* Style for the list items' links */
-        .nav-link {
-        color: #fff;
-        text-decoration: none;
-        margin: 1px 0;
-        padding: 2px 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-        /* Style for the list items' links on hover */
-        .nav-link:hover {
-            text-decoration: underline;
-        }
-
-        /* Custom CSS to make the icons red */
-      .nav-link .far {
-        color: red;
-        }
-        .nav-link .fas {
-        color: red;
-        }
-        .white-icon {
-        color: white !important;
-        }
-
-        .white-square {
-        background-color: #fff;
-    }
-    .white-square .nav-link {
-        color: red;
-    }
-    </style>
-</head>
-<body>
-    <div class="container-fluid">
-        <div class="row">
-            <!-- Black Sidebar (col-3 for Bootstrap 4) -->
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet" />
+      <title>Black Sidebar with List</title>
+      <style>
+         .black-sidebar {
+         background-color: #000;
+         color: #fff;
+         height: 100vh;
+         padding: 15px;
+         overflow-y: auto;
+         }
+         .nav-item {
+         padding: 10px;
+         list-style: none;
+         }
+         .nav-link {
+         color: #fff;
+         text-decoration: none;
+         margin: 1px 0;
+         padding: 2px 10px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         }
+         .nav-link:hover {
+         text-decoration: underline;
+         }
+         .nav-link .far {
+         color: red;
+         }
+         .nav-link .fas {
+         color: red;
+         }
+         .white-icon {
+         color: white !important;
+         }
+         .white-square {
+         background-color: #fff;
+         }
+         .white-square .nav-link {
+         color: red;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="container-fluid">
+         <div class="row">
+            
             <div class="col-md-1 black-sidebar">
-                <!-- Sidebar Content Goes Here -->
-                <h1 class="text-center"><img src="../../images/neu.png" alt="Icon"></h1>
-                <ul class="nav flex-column">
-                    <li class="nav-item text-center">
-                        <a class="nav-link" href="/kanbas/profile/index.html">
-                           <i class="far fa-user fa-lg white-icon"></i><br>
-                           Account</a>
-                    </li>
-                    <li class="nav-item text-center">
-                        <a class="nav-link" href="#">
-                           <i class="fas fa-chart-bar fa-lg"></i><br>
-                           Dashboard</a>
-                    </li>
-                    <li class="nav-item text-center">
-                        <a class="nav-link" href="/kanbas/courses_navigation/index.html">
-                           <i class="fas fa-book fa-lg"></i><br>
-                           Courses</a>
-                    </li>
-                    <li class="nav-item text-center">
+               
+               <h1 class="text-center"><img src="../../images/neu.png" alt="Icon"></h1>
+               <ul class="nav flex-column">
+                  <li class="nav-item text-center">
+                     <a class="nav-link" href="/kanbas/profile/index.html">
+                     <i class="far fa-user fa-lg white-icon"></i><br>
+                     Account</a>
+                  </li>
+                  <li class="nav-item text-center white-square">
                      <a class="nav-link" href="#">
-                        <i class="far fa-calendar fa-lg"></i><br>
-                        Calendar</a>
-                    </li>
-                    <li class="nav-item text-center">
+                     <i class="fas fa-chart-bar fa-lg"></i><br>
+                     Dashboard</a>
+                  </li>
+                  <li class="nav-item text-center">
+                     <a class="nav-link" href="/kanbas/home/home.html">
+                     <i class="fas fa-book fa-lg"></i><br>
+                     Courses</a>
+                  </li>
+                  <li class="nav-item text-center">
                      <a class="nav-link" href="#">
-                        <i class="fas fa-inbox fa-lg"></i><br>
-                        Inbox</a>
-                    </li>
-                    <li class="nav-item text-center">
+                     <i class="far fa-calendar fa-lg"></i><br>
+                     Calendar</a>
+                  </li>
+                  <li class="nav-item text-center">
                      <a class="nav-link" href="#">
-                        <i class="far fa-clock fa-lg"></i><br>
-                        History</a>
-                    </li>
-                    <li class="nav-item text-center">
+                     <i class="fas fa-inbox fa-lg"></i><br>
+                     Inbox</a>
+                  </li>
+                  <li class="nav-item text-center">
                      <a class="nav-link" href="#">
-                        <i class="fas fa-tv fa-lg"></i><br>
-                        Studio</a>
-                    </li>
-                    <li class="nav-item text-center">
+                     <i class="far fa-clock fa-lg"></i><br>
+                     History</a>
+                  </li>
+                  <li class="nav-item text-center">
                      <a class="nav-link" href="#">
-                        <i class="fas fa-arrow-right fa-lg"></i><br>
-                        Commons</a>
-                    </li>
-                    <li class="nav-item text-center">
+                     <i class="fas fa-tv fa-lg"></i><br>
+                     Studio</a>
+                  </li>
+                  <li class="nav-item text-center">
                      <a class="nav-link" href="#">
-                        <i class="fas fa-question fa-lg"></i><br>
-                        Help</a>
-                    </li>
-                </ul>
+                     <i class="fas fa-arrow-right fa-lg"></i><br>
+                     Commons</a>
+                  </li>
+                  <li class="nav-item text-center">
+                     <a class="nav-link" href="#">
+                     <i class="fas fa-question fa-lg"></i><br>
+                     Help</a>
+                  </li>
+               </ul>
             </div>
-
-            <!-- Main Content (col-9 for Bootstrap 4) -->
+            
             <div class="col-md-10">
-                <!-- Dashboard Title -->
-            <h2 style="color: black;">Dashboard</h2>
-            <hr>
-
-            <!-- Published Courses Subtitle -->
-            <h3 style="color: black;">Published Courses (24)</h3>
-
-            <!-- Grid of Courses -->
-<div class="d-flex flex-row flex-wrap">
-    <!-- Course Card 1 -->
-    <div class="card position-relative" style="width: 260px; margin: 15px;">
-        <!-- Three-dot Icon -->
-        <i class="fas fa-ellipsis-v" style="position: absolute; top: 10px; right: 10px; color: white;"></i>
-    
-        <!-- Card Content -->
-        <div class="card-top" style="background-color: blue; height: 120px;"></div>
-        <div class="card-body">
-            <h5 class="card-title" style="color: blue;">CS4550 12631 Web Development</h5>
-            <p class="card-text">CS4550.12631.202410</p>
-            <p class="card-text">202410_1 Fall 2023 Semester Full Term</p>
-            <a href="course1.html" style="color:gray" ><i class="fas fa-eye"></i></a>
-        </div>
-    </div>
-
-    <!-- Course Card 2 -->
-    
-    <div class="card position-relative" style="width: 260px; margin: 15px;">
-        <!-- Three-dot Icon -->
-        <i class="fas fa-ellipsis-v" style="position: absolute; top: 10px; right: 10px; color: white;"></i>
-    
-        <!-- Card Content -->
-        <div class="card-top" style="background-color: blue; height: 120px;"></div>
-        <div class="card-body">
-            <h5 class="card-title" style="color: blue;">CS4550 12631 Web Development</h5>
-            <p class="card-text">CS4550.12631.202410</p>
-            <p class="card-text">202410_1 Fall 2023 Semester Full Term</p>
-            <a href="course1.html" style="color:gray" ><i class="fas fa-eye"></i></a>
-        </div>
-    </div>
-
-    <!-- Course Card 3 -->
-    <div class="card position-relative" style="width: 260px; margin: 15px;">
-        <!-- Three-dot Icon -->
-        <i class="fas fa-ellipsis-v" style="position: absolute; top: 10px; right: 10px; color: white;"></i>
-    
-        <!-- Card Content -->
-        <div class="card-top" style="background-color: blue; height: 120px;"></div>
-        <div class="card-body">
-            <h5 class="card-title" style="color: blue;">CS4550 12631 Web Development</h5>
-            <p class="card-text">CS4550.12631.202410</p>
-            <p class="card-text">202410_1 Fall 2023 Semester Full Term</p>
-            <a href="course1.html" style="color:gray" ><i class="fas fa-eye"></i></a>
-        </div>
-    </div>
-
-    <!-- Course Card 4 -->
-    <div class="card position-relative" style="width: 260px; margin: 15px;">
-        <!-- Three-dot Icon -->
-        <i class="fas fa-ellipsis-v" style="position: absolute; top: 10px; right: 10px; color: white;"></i>
-    
-        <!-- Card Content -->
-        <div class="card-top" style="background-color: blue; height: 120px;"></div>
-        <div class="card-body">
-            <h5 class="card-title" style="color: blue;">CS4550 12631 Web Development</h5>
-            <p class="card-text">CS4550.12631.202410</p>
-            <p class="card-text">202410_1 Fall 2023 Semester Full Term</p>
-            <a href="course1.html" style="color:gray" ><i class="fas fa-eye"></i></a>
-        </div>
-    </div>
-
-    <!-- Course Card 5 -->
-    <div class="card position-relative" style="width: 260px; margin: 15px;">
-        <!-- Three-dot Icon -->
-        <i class="fas fa-ellipsis-v" style="position: absolute; top: 10px; right: 10px; color: white;"></i>
-    
-        <!-- Card Content -->
-        <div class="card-top" style="background-color: blue; height: 120px;"></div>
-        <div class="card-body">
-            <h5 class="card-title" style="color: blue;">CS4550 12631 Web Development</h5>
-            <p class="card-text">CS4550.12631.202410</p>
-            <p class="card-text">202410_1 Fall 2023 Semester Full Term</p>
-            <a href="course1.html" style="color:gray" ><i class="fas fa-eye"></i></a>
-        </div>
-    </div>
-
-    <!-- Course Card 6 -->
-    <div class="card position-relative" style="width: 260px; margin: 15px;">
-        <!-- Three-dot Icon -->
-        <i class="fas fa-ellipsis-v" style="position: absolute; top: 10px; right: 10px; color: white;"></i>
-    
-        <!-- Card Content -->
-        <div class="card-top" style="background-color: blue; height: 120px;"></div>
-        <div class="card-body">
-            <h5 class="card-title" style="color: blue;">CS4550 12631 Web Development</h5>
-            <p class="card-text">CS4550.12631.202410</p>
-            <p class="card-text">202410_1 Fall 2023 Semester Full Term</p>
-            <a href="course1.html" style="color:gray" ><i class="fas fa-eye"></i></a>
-        </div>
-    </div>
-
-    <div class="card position-relative" style="width: 260px; margin: 15px;">
-        <!-- Three-dot Icon -->
-        <i class="fas fa-ellipsis-v" style="position: absolute; top: 10px; right: 10px; color: white;"></i>
-    
-        <!-- Card Content -->
-        <div class="card-top" style="background-color: blue; height: 120px;"></div>
-        <div class="card-body">
-            <h5 class="card-title" style="color: blue;">CS4550 12631 Web Development</h5>
-            <p class="card-text">CS4550.12631.202410</p>
-            <p class="card-text">202410_1 Fall 2023 Semester Full Term</p>
-            <a href="course1.html" style="color:gray" ><i class="fas fa-eye"></i></a>
-        </div>
-    </div>
-
-    <div class="card position-relative" style="width: 260px; margin: 15px;">
-        <!-- Three-dot Icon -->
-        <i class="fas fa-ellipsis-v" style="position: absolute; top: 10px; right: 10px; color: white;"></i>
-    
-        <!-- Card Content -->
-        <div class="card-top" style="background-color: blue; height: 120px;"></div>
-        <div class="card-body">
-            <h5 class="card-title" style="color: blue;">CS4550 12631 Web Development</h5>
-            <p class="card-text">CS4550.12631.202410</p>
-            <p class="card-text">202410_1 Fall 2023 Semester Full Term</p>
-            <a href="course1.html" style="color:gray" ><i class="fas fa-eye"></i></a>
-        </div>
-    </div>
-</div>
-
+               
+               <h2 style="color: black;">Dashboard</h2>
+               <hr>
+               
+               <h3 style="color: black;">Published Courses (24)</h3>
+               
+               <div class="d-flex flex-row flex-wrap">
+                  
+                  <div class="card position-relative" style="width: 260px; margin: 15px;">
+                     
+                     <i class="fas fa-ellipsis-v" style="position: absolute; top: 10px; right: 10px; color: white;"></i>
+                     
+                     <div class="card-top" style="background-color: red; height: 120px;"></div>
+                     <a href="/kanbas/home/home.html" style="color:gray" >
+                        <div class="card-body">
+                           <h5 class="card-title" style="color: red;">CS4550 12631 Web Development</h5>
+                           <p class="card-text">CS4550.12631.202410</p>
+                           <p class="card-text">202410_1 Fall 2023 Semester Full Term</p>
+                           <i class="fas fa-pencil-alt"></i>
+                        </div>
+                     </a>
+                  </div>
+                  
+                  <div class="card position-relative" style="width: 260px; margin: 15px;">
+                     
+                     <i class="fas fa-ellipsis-v" style="position: absolute; top: 10px; right: 10px; color: white;"></i>
+                     
+                     <div class="card-top" style="background-color: orange; height: 120px;"></div>
+                     <a href="/kanbas/home/home.html" style="color:gray" >
+                        <div class="card-body">
+                           <h5 class="card-title" style="color: orange;">CS4550 12631 Web Development</h5>
+                           <p class="card-text">CS4550.12631.202410</p>
+                           <p class="card-text">202410_1 Fall 2023 Semester Full Term</p>
+                           <i class="fas fa-pencil-alt"></i>
+                        </div>
+                     </a>
+                  </div>
+                  
+                  <div class="card position-relative" style="width: 260px; margin: 15px;">
+                     
+                     <i class="fas fa-ellipsis-v" style="position: absolute; top: 10px; right: 10px; color: white;"></i>
+                     
+                     <div class="card-top" style="background-color: yellow; height: 120px;"></div>
+                     <a href="/kanbas/home/home.html" style="color:gray" >
+                        <div class="card-body">
+                           <h5 class="card-title" style="color: yellow;">CS4550 12631 Web Development</h5>
+                           <p class="card-text">CS4550.12631.202410</p>
+                           <p class="card-text">202410_1 Fall 2023 Semester Full Term</p>
+                           <i class="fas fa-pencil-alt"></i>
+                        </div>
+                     </a>
+                  </div>
+                  
+                  <div class="card position-relative" style="width: 260px; margin: 15px;">
+                     
+                     <i class="fas fa-ellipsis-v" style="position: absolute; top: 10px; right: 10px; color: white;"></i>
+                     
+                     <div class="card-top" style="background-color: green; height: 120px;"></div>
+                     <a href="/kanbas/home/home.html" style="color:gray" >
+                        <div class="card-body">
+                           <h5 class="card-title" style="color: green;">CS4550 12631 Web Development</h5>
+                           <p class="card-text">CS4550.12631.202410</p>
+                           <p class="card-text">202410_1 Fall 2023 Semester Full Term</p>
+                           <i class="fas fa-pencil-alt"></i>
+                        </div>
+                     </a>
+                  </div>
+                  
+                  <div class="card position-relative" style="width: 260px; margin: 15px;">
+                     
+                     <i class="fas fa-ellipsis-v" style="position: absolute; top: 10px; right: 10px; color: white;"></i>
+                     
+                     <div class="card-top" style="background-color: blue; height: 120px;"></div>
+                     <a href="/kanbas/home/home.html" style="color:gray" >
+                        <div class="card-body">
+                           <h5 class="card-title" style="color: blue;">CS4550 12631 Web Development</h5>
+                           <p class="card-text">CS4550.12631.202410</p>
+                           <p class="card-text">202410_1 Fall 2023 Semester Full Term</p>
+                           <i class="fas fa-pencil-alt"></i>
+                        </div>
+                     </a>
+                  </div>
+                  
+                  <div class="card position-relative" style="width: 260px; margin: 15px;">
+                     
+                     <i class="fas fa-ellipsis-v" style="position: absolute; top: 10px; right: 10px; color: white;"></i>
+                     
+                     <div class="card-top" style="background-color: indigo; height: 120px;"></div>
+                     <a href="/kanbas/home/home.html" style="color:gray" >
+                        <div class="card-body">
+                           <h5 class="card-title" style="color: indigo;">CS4550 12631 Web Development</h5>
+                           <p class="card-text">CS4550.12631.202410</p>
+                           <p class="card-text">202410_1 Fall 2023 Semester Full Term</p>
+                           <i class="fas fa-pencil-alt"></i>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="card position-relative" style="width: 260px; margin: 15px;">
+                     
+                     <i class="fas fa-ellipsis-v" style="position: absolute; top: 10px; right: 10px; color: white;"></i>
+                     
+                     <div class="card-top" style="background-color: violet; height: 120px;"></div>
+                     <a href="/kanbas/home/home.html" style="color:gray" >
+                        <div class="card-body">
+                           <h5 class="card-title" style="color: violet;">CS4550 12631 Web Development</h5>
+                           <p class="card-text">CS4550.12631.202410</p>
+                           <p class="card-text">202410_1 Fall 2023 Semester Full Term</p>
+                           <i class="fas fa-pencil-alt"></i>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="card position-relative" style="width: 260px; margin: 15px;">
+                     
+                     <i class="fas fa-ellipsis-v" style="position: absolute; top: 10px; right: 10px; color: white;"></i>
+                     
+                     <div class="card-top" style="background-color: maroon; height: 120px;"></div>
+                     <a href="/kanbas/home/home.html" style="color:gray" >
+                        <div class="card-body">
+                           <h5 class="card-title" style="color: maroon;">CS4550 12631 Web Development</h5>
+                           <p class="card-text">CS4550.12631.202410</p>
+                           <p class="card-text">202410_1 Fall 2023 Semester Full Term</p>
+                           <i class="fas fa-pencil-alt"></i>
+                        </div>
+                     </a>
+                  </div>
+               </div>
             </div>
-        </div>
-    </div>
-</body>
+         </div>
+      </div>
+   </body>
 </html>
