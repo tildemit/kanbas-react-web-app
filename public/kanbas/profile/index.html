@@ -1,45 +1,202 @@
-<table width="100%">
-  <tr>
-     <td valign="top">
-        <ul>
-           <li><a href="/kanbas/account_navigation/index.html">Account</a></li>
-           <li><a href="#">Dashboard</a></li>
-           <li><a href="/kanbas/courses_navigation/index.html">Courses</a></li>
-           <li><a href="#">Calendar</a></li>
-           <li><a href="#">Inbox</a></li>
-           <li><a href="#">History</a></li>
-           <li><a href="#">Studio</a></li>
-           <li><a href="#">Commons</a></li>
-           <li><a href="#">Help</a></li>
-        </ul>
-     </td>
-     <td valign="top">
-        <ul>
-           <li><a href="#">Notifications</a></li>
-           <li><a href="/kanbas/profile/index.html">Profile</a></li>
-           <li><a href="#">Files</a></li>
-           <li><a href="#">Settings</a></li>
-           <li>
-              <a href="#">ePortfolios</a>
-           </li>
-           <li><a href="#">Shared Content</a></li>
-           <li><a href="#">The Hub</a></li>
-           <li><a href="#">Qwickly Course Tools</a></li>
-           <li><a href="#">Global Announcements</a></li>
-        </ul>
-     </td>
-     <td valign="top">
-        <label>Jose Annunziato's Profile</label>
-        <br>
-        <hr/>
-        <br>
-        <h1>Jose Annunziato  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <a href="/kanbas/profile/edit.html"><button>&#9998 Edit Profile</button></a></h1>
-        <h2>Contact</h2>
-        <label>No registered services, you can add some on the <a href="#">settings</a> page.</label>
-        <h2>Biography</h2>
-        <label>Faculty, Software Engineer, AI, Space, and renewables enthusiast.</label>
-        <h2>Links</h2>
-        <label><a href="#"> YouTube</label>
-     </td>
-  </tr>
-</table>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet" />
+
+    <title>Black Sidebar with List</title>
+    <style>
+        /* Custom CSS for the black sidebar */
+        .black-sidebar {
+            background-color: #000;
+            color: #fff;
+            height: 100vh; /* 100% of the viewport height */
+            padding: 15px;
+            overflow-y: auto;
+        }
+
+        /* Style for the list items in the sidebar */
+        .nav-item {
+            padding: 10px;
+            list-style: none;
+        }
+
+        /* Style for the list items' links */
+        .nav-link {
+            color: #fff;
+            text-decoration: none;
+            margin: 1px 0;
+            padding: 2px 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Style for the list items' links on hover */
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Custom CSS to make the icons red */
+        .nav-link .far {
+            color: red;
+        }
+        .nav-link .fas {
+            color: red;
+        }
+        .white-icon {
+            color: gray !important;
+        }
+
+        .white-square {
+            background-color: #fff;
+        }
+        .white-square .nav-link {
+            color: red;
+        }
+
+        /* Style for the red links in the main content */
+        .main-content {
+            padding: 20px; /* Add some padding to the main content */
+            color: red; /* Make text in the main content red */
+        }
+
+        /* Style for the header at the top of the main content */
+        .main-content h2 {
+            color: red; /* Make the header text red */
+        }
+
+        /* Style for the red links */
+        .main-content a {
+            color: red; /* Make the links red */
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px; /* Add space between links */
+        }
+
+        /* Style for the red links on hover */
+        .main-content a:hover {
+            text-decoration: underline;
+        }
+
+        .profile-link {
+        color: black !important;
+        border-left: 3px solid black; /* Add a black left border */
+        padding-left: 10px; /* Add some left padding for spacing */
+    }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Black Sidebar (col-1 for a custom width of 85px) -->
+            <div class="col-md-1 col-sm-4 black-sidebar">
+                <!-- Sidebar Content Goes Here -->
+                <h1 class="text-center"><img src="../../images/neu.png" alt="Icon"></h1>
+                <ul class="nav flex-column">
+                    <li class="nav-item text-center white-square">
+                        <a class="nav-link" href="/kanbas/profile/index.html">
+                           <i class="far fa-user fa-lg white-icon"></i><br>
+                           Account
+                        </a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link" href="#">
+                           <i class="fas fa-chart-bar fa-lg"></i><br>
+                           Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link" href="/kanbas/courses_navigation/index.html">
+                           <i class="fas fa-book fa-lg"></i><br>
+                           Courses
+                        </a>
+                    </li>
+                    <li class="nav-item text-center">
+                     <a class="nav-link" href="#">
+                        <i class="far fa-calendar fa-lg"></i><br>
+                        Calendar
+                        </a>
+                    </li>
+                    <li class="nav-item text-center">
+                     <a class="nav-link" href="#">
+                        <i class="fas fa-inbox fa-lg"></i><br>
+                        Inbox
+                        </a>
+                    </li>
+                    <li class="nav-item text-center">
+                     <a class="nav-link" href="#">
+                        <i class="far fa-clock fa-lg"></i><br>
+                        History
+                        </a>
+                    </li>
+                    <li class="nav-item text-center">
+                     <a class="nav-link" href="#">
+                        <i class="fas fa-tv fa-lg"></i><br>
+                        Studio
+                        </a>
+                    </li>
+                    <li class="nav-item text-center">
+                     <a class="nav-link" href="#">
+                        <i class="fas fa-arrow-right fa-lg"></i><br>
+                        Commons
+                        </a>
+                    </li>
+                    <li class="nav-item text-center">
+                     <a class="nav-link" href="#">
+                        <i class="fas fa-question fa-lg"></i><br>
+                        Help
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-11 col-sm-8 main-content">
+               <!-- Main Content Goes Here -->
+               <div style="display: flex; align-items: center;">
+                   <i class="fas fa-bars" style="margin-right: 30px;"></i>
+                   <div style="color: black;">Jose Annunziato's Profile</div>
+               </div>
+               <hr class="divider">
+               <div class="row">
+                   <!-- Left Column for Links -->
+                   <div class="col-md-4">
+                       <a href="#">Notifications</a>
+                       <a class="profile-link" href="#">Profile</a>
+                       <a href="#">Files</a>
+                       <a href="#">Settings</a>
+                       <a href="#">ePortfolios</a>
+                       <a href="#">Shared Content</a>
+                       <a href="#">The Hub</a>
+                       <a href="#">Qwickly Course Tools</a>
+                       <a href="#">Global Announcements</a>
+                       <!-- Add more red links here -->
+                   </div>
+                   <!-- Right Column for Edit Profile Section -->
+                   <div class="col-md-6 d-flex justify-content-between align-items-center">
+                       <div>
+                        <i class="fas fa-user fa-7x white-icon"></i>
+                        <br><br>
+                           <h3 style="color: black;">Jose Annunizato</h3>
+                           <br>
+                           <h3 style="color: black;">Content</h3>
+                           <p style="color: black; white-space: nowrap;">No registered services, you can add <br> some on the <a href="#" style="display: inline;">settings</a> page.</p>
+                           <br>
+                           <h3 style="color: black;">Biography</h3>
+                           <p style="color: black; white-space: nowrap;">Faculty, Software Engineer, AI, Space, <br> and renewables enthusiast.</p>
+                           <br>
+                           <h3 style="color: black;">Links</h3>
+                           <a href="#"> Youtube</a>
+                           <!-- Add form elements and content for profile editing here -->
+                       </div>
+                       <div class="align-self-start">
+                       <a href="/kanbas/profile/edit.html" class="btn btn-secondary" style="color: black; background-color: lightgray;">Edit Profile</a>
+                       </div>
+                   </div>
+                   
+               </div>
+           </div>
+

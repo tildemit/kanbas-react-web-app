@@ -1,115 +1,359 @@
-<table width="100%">
-  <tr>
-     <td valign="top">
-        <ul>
-           <li><a href="/kanbas/account_navigation/index.html">Account</a></li>
-           <li><a href="#">Dashboard</a></li>
-           <li><a href="/kanbas/courses_navigation/index.html">Courses</a></li>
-           <li><a href="#">Calendar</a></li>
-           <li><a href="#">Inbox</a></li>
-           <li><a href="#">History</a></li>
-           <li><a href="#">Studio</a></li>
-           <li><a href="#">Commons</a></li>
-           <li><a href="#">Help</a></li>
-        </ul>
-     </td>
-     <td valign="top">
-        <ul>
-           <li><a href="/kanbas/home/home.html">Home</a></li>
-           <li><a href="#">Modules</a></li>
-           <li><a href="#">Piazza</a></li>
-           <li><a href="#">Zoom Meetings</a></li>
-           <li>
-              <a href="/kanbas/assignments/index.html">Assignments</a>
-           </li>
-           <li><a href="#">Quizzes</a></li>
-           <li><a href="/kanbas/grades/grades.html">Grades</a></li>
-           <li><a href="#">People</a></li>
-           <li><a href="#">Panopto Video</a></li>
-           <li><a href="#">Discussions</a></li>
-           <li><a href="#">Announcements</a></li>
-           <li><a href="#">Pages</a></li>
-           <li><a href="#">Files</a></li>
-           <li><a href="#">Rubrics</a></li>
-           <li><a href="#">Outcomes</a></li>
-           <li><a href="#">Collaborations</a></li>
-           <li><a href="#">Syllabus</a></li>
-           <li><a href="#">Settings</a></li>
-        </ul>
-     </td>
-     <td valign="top">
-        <select>
-           <option>SpeedGrader</option>
-        </select>
-        <h2> Assignment Name</h2>
-        <input value="A1 - ENV + HTML"> <br><br>
-        <textarea cols="25" rows="2">This is the assignment description.</textarea>
-        <br><br>
-        <label>Points</label><br/>
-        <input value="100">
-        <br><br>
-        <label>Assignment Group</label><br/>
-        <select>
-           <option>ASSIGNMENTS</option>
-        </select>
-        <br><br>
-        <label>Display Grade as</label><br/>
-        <select>
-           <option>Percentage</option>
-        </select>
-        <br><br>
-        <label>Submission Type</label><br/>
-        <select>
-           <option>Online</option>
-        </select>
-        <br><br>
-        <label>Online Entry Options</label>
-        <br/>
-        <input type="checkbox"/>
-        <label>Text Entry</label>    <br/>
-        <input type="checkbox"/>
-        <label>Website URL</label>    <br/>
-        <input type="checkbox"/>
-        <label>Media Recordings</label> <br/>
-        <input type="checkbox"/>
-        <label>Student Annotation</label> <br/>
-        <input type="checkbox"/>
-        <label>File Uploads</label>
-        <br><br>
-        <label>Submission Attempts</label><br/>
-        <select>
-           <option>Unlimited</option>
-        </select>
-        <br><br>
-        <label>Plagiarism Review</label><br/>
-        <select>
-           <option>None</option>
-        </select>
-        <br><br>
-        <label>Group Assignment</label>
-        <br/>
-        <input type="checkbox"/>
-        <label>This is a group assignment</label>    <br/>
-        <br>
-        <label>Assign <br> Assign To</label>    <br/>
-        <input value="Everyone"> <br><br>
-        <label >
-        Due
-        </label> <br>
-        <input type="date"
-           value="2021-01-01"/><br/><br>
-        <label >
-        Available From
-        </label> <br>
-        <input type="date"
-           value="2021-01-01"/><br/><br>
-        <label >
-        Until
-        </label> <br>
-        <input type="date"
-           value="2021-01-01"/><br/><br>
-        <a href="/kanbas/assignments/index.html"><button>Cancel</button></a>
-        <a href="/kanbas/assignments/index.html"><button>Save</button></a>
-     </td>
-  </tr>
-</table>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet" />
+
+    <title>Black Sidebar with List</title>
+    <style>
+        /* Custom CSS for the black sidebar */
+        .black-sidebar {
+            background-color: #000;
+            color: #fff;
+            height: 100vh; /* 100% of the viewport height */
+            padding: 15px;
+            overflow-y: auto;
+        }
+
+        /* Style for the list items */
+        .nav-item {
+            padding: 10px;
+            list-style: none;
+        }
+
+        /* Style for the list items' links */
+        .nav-link {
+            color: #fff;
+            text-decoration: none;
+            margin: 1px 0;
+            padding: 2px 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Style for the list items' links on hover */
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Custom CSS to make the icons red */
+        .nav-link .far {
+            color: red;
+        }
+        .nav-link .fas {
+            color: red;
+        }
+        .white-icon {
+            color: white !important;
+        }
+
+        .white-square {
+            background-color: #fff;
+        }
+        .white-square .nav-link {
+            color: red;
+        }
+        .breadcrumb-item a {
+            color: red; /* Change breadcrumb link color to red */
+        }
+        .breadcrumb-hamburger {
+            display: flex;
+            align-items: center;
+            color: red;
+        }
+
+        /* Style for the red links in the main content */
+        .main-content {
+            padding: 20px; /* Add some padding to the main content */
+            color: red; /* Make text in the main content red */
+        }
+
+        /* Style for the header at the top of the main content */
+        .main-content h2 {
+            color: red; /* Make the header text red */
+        }
+
+        /* Style for the red links */
+        .main-content a {
+            color: red; /* Make the links red */
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px; /* Add space between links */
+        }
+
+        /* Style for the red links on hover */
+        .main-content a:hover {
+            text-decoration: underline;
+        }
+
+        .assignments-link {
+            color: black !important;
+            border-left: 3px solid black; /* Add a black left border */
+            padding-left: 10px; /* Add some left padding for spacing */
+        }
+
+        .assignment-item {
+        border-left: 5px solid green; /* Add a green border to the left */
+        padding-left: 10px; /* Add some padding to space the text from the border */
+    }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Black Sidebar (col-3 for Bootstrap 4) -->
+            <div class="col-md-1 black-sidebar">
+                <!-- Sidebar Content Goes Here -->
+                <h1 class="text-center"><img src="../../images/neu.png" alt="Icon"></h1>
+                <ul class="nav flex-column">
+                    <li class="nav-item text-center">
+                        <a class="nav-link" href="/kanbas/profile/index.html">
+                           <i class="far fa-user fa-lg white-icon"></i><br>
+                           Account</a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link" href="/kanbas/dashboard/index.html">
+                           <i class="fas fa-chart-bar fa-lg"></i><br>
+                           Dashboard</a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link" href="/kanbas/courses_navigation/index.html">
+                           <i class="fas fa-book fa-lg"></i><br>
+                           Courses</a>
+                    </li>
+                    <li class="nav-item text-center">
+                     <a class="nav-link" href="#">
+                        <i class="far fa-calendar fa-lg"></i><br>
+                        Calendar</a>
+                    </li>
+                    <li class="nav-item text-center">
+                     <a class="nav-link" href="#">
+                        <i class="fas fa-inbox fa-lg"></i><br>
+                        Inbox</a>
+                    </li>
+                    <li class="nav-item text-center">
+                     <a class="nav-link" href="#">
+                        <i class="far fa-clock fa-lg"></i><br>
+                        History</a>
+                    </li>
+                    <li class="nav-item text-center">
+                     <a class="nav-link" href="#">
+                        <i class="fas fa-tv fa-lg"></i><br>
+                        Studio</a>
+                    </li>
+                    <li class="nav-item text-center">
+                     <a class="nav-link" href="#">
+                        <i class="fas fa-arrow-right fa-lg"></i><br>
+                        Commons</a>
+                    </li>
+                    <li class="nav-item text-center">
+                     <a class="nav-link" href="#">
+                        <i class="fas fa-question fa-lg"></i><br>
+                        Help</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Main Content (col-9 for Bootstrap 4) -->
+            <div class="col-md-8 order-2 order-md-1 main-content">
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb" style="background-color: transparent; margin: 0; padding: 0;">
+                        <li class="breadcrumb-hamburger">
+                            <i class="fas fa-bars" style="margin-right: 10px;"></i> <!-- Hamburger Icon -->
+                        </li>
+                        <li class="breadcrumb-item"><a href="#">CS5610.11744.202310</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Assignments</li>
+
+                        <li class="ml-auto">
+                           <button class="btn float-end" style="background-color: lightgray;">Published<i class="fas fa-ellipsis-v"></i></button>
+                       </li>
+                    </ol>
+
+                    
+                </nav>
+                <hr class="divider">
+                <div class="row">
+                    <div class="col-md-2">
+                        <a href="#">Home</a>
+                        <a href="#">Modules</a>
+                        <a href="#">Piazza</a>
+                        <a href="#">Zoom Meetings</a>
+                        <a class="assignments-link" href="#">Assignments</a>
+                        <a href="#">Quizzes</a>
+                        <a href="#">Grades</a>
+                        <a href="#">People</a>
+                        <a href="#">Panopto Video</a>
+                        <a href="#">Discussions</a>
+                        <a href="#">Announcements</a>
+                        <a href="#">Pages</a>
+                        <a href="#">Files</a>
+                        <a href="#">Rubrics</a>
+                        <a href="#">Outcomes</a>
+                        <a href="#">Collaborations</a>
+                        <a href="#">Syllabus</a>
+                        <a href="#">Progress Reports <br> (EAB) Navigate</a>
+                        <a href="#">Settings</a>
+                        <!-- Add more red links here -->
+
+                        
+                    </div>
+
+                    <div class="col-md-10 main-content">
+                     <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                         <ol class="breadcrumb" style="background-color: transparent; margin: 0; padding: 0;">
+                             <!-- ... (Same as your existing breadcrumb) -->
+                         </ol>
+                     </nav>
+                     <hr class="divider">
+                     <!-- Edit Assignment Form -->
+                     <form class="edit-assignment-form">
+                         <div class="form-group">
+                             <label style="color: #000;" class="form-control-label">Assignment Name</label>
+                             <input type="text" class="form-control" value="A1 + ENV + HTML">
+                         </div>
+                         <div class="form-group">
+                             <textarea class="form-control" rows="4"> This assignment describes how to install the development environment for creating and working with Web applications we will be developing this semester. We will add new content every week, pushing the code to a GitHub source repository, and then deploying the content to a remote server hosted on Netlify.</textarea>
+                         </div>
+                         <div class="form-group row align-items-center"> <!-- Use a row to align label and input on the same line -->
+                           <label for="points" style="color: #000;" class="col-md-2 col-form-label text-md-right">Points</label> <!-- Adjust column width as needed -->
+                           <div class="col-md-10">
+                               <input type="text" class="form-control" value="100" id="points">
+                           </div>
+                       </div>
+                       <div class="form-group row align-items-center">
+                        <label style="color: #000;" class="col-md-2 col-form-label text-md-right">Assignment Group</label>
+                        <div class="col-md-10">
+                            <select class="form-control">
+                                <option>ASSIGNMENTS</option>
+                                <!-- Add more options as needed -->
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row align-items-center">
+                     <label style="color: #000;" class="col-md-2 col-form-label text-md-right">Display Grade as</label>
+                     <div class="col-md-10">
+                         <select class="form-control">
+                             <option>Percentage</option>
+                             <!-- Add more options as needed -->
+                         </select>
+                     </div>
+                 </div>
+
+                 <div class="form-group row align-items-center">
+                  <div class="col-md-2"></div>
+                  <div class="col-md-10">
+                      <div class="form-check mt-2 ml-3"> <!-- Adjust mt-2 for top margin and ml-3 for spacing -->
+                          <input class="form-check-input" type="checkbox" id="displayGradeCheckbox">
+                          <label class="form-check-label" style="color: black;">
+                              Do not count this assignment towards the final grade
+                          </label>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="form-group row">
+               <label style="color: #000;" class="col-md-2 col-form-label text-md-right">Submission Type</label>
+               <div class="col-md-10">
+                   <div class="border p-3" style="display: flex; flex-direction: column; align-items: flex-start;"> <!-- Add custom CSS -->
+                       <select class="form-control">
+                           <option>Online</option>
+                       </select>
+                       <p class="mt-3" style="color: black;">Online Entry Options</p> <!-- Header text below the dropdown -->
+           
+                       <!-- Checkboxes below the header text -->
+                       <div class="form-check">
+                           <input class="form-check-input" type="checkbox" id="checkbox1">
+                           <label class="form-check-label" style="color:black">
+                               Text Entry
+                           </label>
+                       </div>
+                       <div class="form-check">
+                           <input class="form-check-input" type="checkbox" id="checkbox2">
+                           <label class="form-check-label" style="color:black">
+                               Website URL
+                           </label>
+                       </div>
+                       <div class="form-check">
+                           <input class="form-check-input" type="checkbox" id="checkbox3">
+                           <label class="form-check-label" style="color:black">
+                               Media Recordings
+                           </label>
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+           <div class="form-group row">
+            <label style="color: #000;" class="col-md-2 col-form-label text-md-right">Assign</label>
+            <div class="col-md-10">
+                <div class="border p-3" style="display: flex; flex-direction: column; align-items: flex-start;"> <!-- Add custom CSS -->
+                    <div class="form-group">
+                        <label style="color: #000;" class="form-control-label">Assign To</label>
+                        <input type="text" class="form-control" placeholder="Assign To">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: #000;" class="form-control-label">Due</label>
+                        <input type="text" class="form-control mt-2" placeholder="Due">
+                    </div>
+                    <div class="form-group" style="display: flex;">
+                        <div style="flex: 1;">
+                            <label style="color: #000;" class="form-control-label">Available From</label>
+                            <input type="text" class="form-control mt-2" placeholder="Available From">
+                        </div>
+                        <div style="flex: 1; margin-left: 10px;">
+                            <label style="color: #000;" class="form-control-label">Until</label>
+                            <input type="text" class="form-control mt-2" placeholder="Until">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+         <div class="form-group">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="checkbox4">
+                    <label class="form-check-label" style="color:black">
+                        Notify users that this content has changes
+                    </label>
+                </div>
+                <div>
+                    <button type="button" class="btn" style="background-color: lightgray;">Cancel</button>
+                    <button type="button" class="btn btn-danger">Save</button>
+                </div>
+            </div>
+        </div>
+        <hr class="divider">
+        
+        
+        
+        
+        
+           
+           
+           
+              
+              
+                    
+               
+                     </form>
+                 </div>
+
+                    
+
+                </div>
+                
+                
+            </div>
+            
+
+            
+        </div>
+    </div>
+</body>
+</html>
