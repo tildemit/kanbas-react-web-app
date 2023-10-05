@@ -5,7 +5,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
       <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet" />
-      <title>Black Sidebar with List</title>
+      <title>Kanbas</title>
       <style>
         .black-sidebar {
          background-color: #000;
@@ -31,8 +31,8 @@
          justify-content: center;
          }
          
-         .nav-link:hover {
-         text-decoration: underline;
+         .black-sidebar .nav-link:hover {
+         text-decoration: none;
          }
          
          .nav-link .far {
@@ -75,6 +75,9 @@
          border-left: 3px solid black; 
          padding-left: 10px; 
          }
+         .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+         content: ">";
+         }
       </style>
    </head>
    <body>
@@ -91,7 +94,7 @@
             </li>
             <li class="nav-item text-center">
                <a class="nav-link" href="/kanbas/dashboard/index.html">
-               <i class="fas fa-chart-bar fa-lg"></i><br>
+               <i class="fas fa-tachometer-alt fa-lg"></i><br>
                Dashboard
                </a>
             </li>
@@ -170,7 +173,9 @@
                   <p style="color: black; white-space: nowrap;">Faculty, Software Engineer, AI, Space, <br> and renewables enthusiast.</p>
                   <br>
                   <h3 style="color: black;">Links</h3>
-                  <a href="https://www.youtube.com/@WebDevTV"> Youtube</a>
+                  <i class="fas fa-link" style="display: inline-block; color: gray;"></i>
+                  <a href="https://www.youtube.com/@WebDevTV" style="display: inline-block;">Youtube</a>
+                  <i class="fas fa-external-link-alt"></i>
                </div>
                <div class="align-self-start">
                   <a href="/kanbas/profile/edit.html" class="btn btn-secondary" style="color: black; background-color: lightgray;"><i class="fas fa-pencil-alt"></i>Edit Profile</a>

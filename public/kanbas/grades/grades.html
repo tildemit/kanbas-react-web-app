@@ -5,7 +5,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
       <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet" />
-      <title>Black Sidebar with List</title>
+      <title>Kanbas</title>
       <style>
          .black-sidebar {
          background-color: #000;
@@ -28,8 +28,8 @@
          align-items: center;
          justify-content: center;
          }
-         .nav-link:hover {
-         text-decoration: underline;
+         .black-sidebar .nav-link:hover {
+         text-decoration: none;
          }
          .nav-link .far {
          color: red;
@@ -79,6 +79,9 @@
          border-left: 5px solid green; 
          padding-left: 10px; 
          }
+         .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+         content: ">";
+         }
       </style>
    </head>
    <body>
@@ -94,7 +97,7 @@
                   </li>
                   <li class="nav-item text-center">
                      <a class="nav-link" href="/kanbas/dashboard/index.html">
-                     <i class="fas fa-chart-bar fa-lg"></i><br>
+                     <i class="fas fa-tachometer-alt fa-lg"></i><br>
                      Dashboard</a>
                   </li>
                   <li class="nav-item text-center white-square">
@@ -180,9 +183,6 @@
                                        <button class="btn dropdown-toggle" style="background-color:lightgray" type="button" data-toggle="dropdown">
                                        <i class="fas fa-upload"></i> Export
                                        </button>
-                                       <div class="dropdown-menu">
-                                          <a class="dropdown-item" href="#">Option 1</a>
-                                       </div>
                                     </div>
                                     <button class="btn ml-2" style="background-color: lightgray;" type="button">
                                     <i class="fas fa-cog"></i>
@@ -232,12 +232,16 @@
                                  <td>88%</td>
                                  <td>93%</td>
                                  <td>87%</td>
-                                 <td>91%</td>
+                                 <td>
+                                    <input type="text" class="form-control" value="45%">
+                                 </td>
                               </tr>
                               <tr>
                                  <td>Michael Johnson</td>
                                  <td>78%</td>
-                                 <td>86%</td>
+                                 <td>
+                                    <input type="text" class="form-control" value="86%">
+                                 </td>
                                  <td>75%</td>
                                  <td>80%</td>
                               </tr>
@@ -252,7 +256,9 @@
                                  <td>David Brown</td>
                                  <td>82%</td>
                                  <td>89%</td>
-                                 <td>85%</td>
+                                 <td>
+                                    <input type="text" class="form-control" value="67%">
+                                 </td>
                                  <td>90%</td>
                               </tr>
                               <tr>
@@ -272,7 +278,9 @@
                               <tr>
                                  <td>Karen Wilson</td>
                                  <td>94%</td>
-                                 <td>91%</td>
+                                 <td>
+                                    <input type="text" class="form-control" value="91%">
+                                 </td>
                                  <td>92%</td>
                                  <td>95%</td>
                               </tr>
