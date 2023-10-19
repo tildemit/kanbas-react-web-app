@@ -1,0 +1,48 @@
+.assignment-item {
+    border-left: 5px solid green;
+    padding-left: 10px;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .assignment-item .text-left {
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  .assignment-item a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .assignment-item a:hover {
+    text-decoration: underline;
+  }
+  
+  .assignment-item .fa-check-circle {
+    color: green;
+    margin-right: 25px;
+  }
+  
+  .assignment-item .fa-ellipsis-v {
+    margin-right: 0px;
+  }
+
+  .module-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* AssignmentEditor.css */
+
+/* Style for the input element */
+.custom-input {
+    width: 60%; /* Adjust the width as needed */
+  }
+  
