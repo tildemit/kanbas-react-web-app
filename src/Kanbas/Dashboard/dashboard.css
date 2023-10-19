@@ -1,0 +1,54 @@
+/* dashboard.css */
+
+.black-sidebar {
+    background-color: #000;
+    color: #fff;
+    height: 100vh;
+    padding: 15px;
+    overflow-y: auto;
+  }
+  
+  .nav-item {
+    padding: 10px;
+    list-style: none;
+  }
+  
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin: 1px 0;
+    padding: 2px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .black-sidebar .nav-link:hover {
+    text-decoration: none;
+  }
+  
+  .nav-link .far {
+    color: red;
+  }
+  
+  .nav-link .fas {
+    color: red;
+  }
+  
+  .white-icon {
+    color: white !important;
+  }
+  
+  .white-square {
+    background-color: #fff;
+  }
+  
+  .white-square .nav-link {
+    color: red;
+  }
+  
+  .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+    content: ">";
+  }
+  
