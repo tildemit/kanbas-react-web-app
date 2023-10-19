@@ -1,0 +1,33 @@
+.modules {
+    padding: 20px;
+    color: red;
+  }
+  
+  .module-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .publish-button {
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+  }
+  
+  .publish-icon {
+    margin-right: 5px;
+    color: green;
+  }
+  
+  .ellipsis-button {
+    display: flex;
+    align-items: center;
+  }
+  
+  .ellipsis-icon {
+    color: red;
+  }
+  
+  /* Add any other styling you need for this component */
+  

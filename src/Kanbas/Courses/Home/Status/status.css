@@ -1,0 +1,25 @@
+/* Add your existing CSS styles here. */
+.status-section {
+    float: right;
+    width: calc(100% - 250px); /* Adjust the width as needed */
+  }
+  
+  .button-bar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .upcoming-item {
+    margin-bottom: 15px;
+  }
+  
+  .calendar-icon {
+    position: absolute;
+    top: 0;
+    transform: translateY(0);
+    left: 0;
+    color: black;
+  }
+  

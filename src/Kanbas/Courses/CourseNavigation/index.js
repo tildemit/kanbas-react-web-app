@@ -1,23 +1,46 @@
-import { Link, useParams, useLocation } from "react-router-dom";
-import "./course-navigation.css";
+import React from "react";
+import { NavLink, useParams, useLocation } from "react-router-dom";
+import "./course-navigation.css"; // Updated CSS file name
 
-function CourseNavigation() {
-  const links = ["Home", "Modules", "Assignments", "Grades"];
+const CourseNavigation = () => {
+  const links = [
+    "Home",
+    "Modules",
+    "Piazza",
+    "Zoom Meetings",
+    "Assignments",
+    "Quizzes",
+    "Grades",
+    "People",
+    "Panopto Video",
+    "Discussions",
+    "Announcements",
+    "Pages",
+    "Files",
+    "Rubrics",
+    "Outcomes",
+    "Collaborations",
+    "Syllabus",
+    "Progress Reports (EAB) Navigate",
+    "Settings"
+  ];
   const { courseId } = useParams();
   const { pathname } = useLocation();
+
   return (
-    <div className="list-group" style={{ width: 150 }}>
+    <div className="col-md-2 d-none d-md-block">
       {links.map((link, index) => (
-        <Link
+        <NavLink
           key={index}
           to={`/Kanbas/Courses/${courseId}/${link}`}
-          className={`list-group-item nav-link ${pathname.includes(link) && "active"}`}
+          activeClassName="active"
+          className="home-link"
         >
           {link}
-        </Link>
+        </NavLink>
       ))}
     </div>
   );
-}
+};
 
 export default CourseNavigation;

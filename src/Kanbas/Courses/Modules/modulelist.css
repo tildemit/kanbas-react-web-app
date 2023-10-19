@@ -1,0 +1,28 @@
+.list-group-item {
+  color: black;
+  border-left: 4px solid green;
+  margin-bottom: 10px; /* Add spacing between modules */
+}
+
+.list-group-item i.fas.fa-grip-vertical {
+  margin-right: 10px;
+}
+
+.list-group-item span {
+  margin-left: 10px;
+}
+
+.list-group-item i.fas.fa-check-circle {
+  margin-right: 5px;
+  color: green;
+}
+
+.list-group-item i.fas.fa-ellipsis-v {
+  color: black; /* Make the vertical ellipsis black */
+  background-color: lightgray; /* Add a light gray background to the ellipsis */
+}
+
+/* If you need to add spacing to the top of the module list */
+.list-group {
+  margin-top: 10px;
+}

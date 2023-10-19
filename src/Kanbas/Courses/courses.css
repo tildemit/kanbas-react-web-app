@@ -27,3 +27,7 @@
     display: block; /* Ensure it's a block-level element */
   }
   
+  .custom-text-left {
+    text-align: left;
+  }
+  
