@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate, useParams, Link } from "react-router-dom";
 import db from "../../../Database";
-import './AssignmentEditor.css'; // Import the CSS file
+import './AssignmentEditor.css';
 
 function AssignmentEditor() {
   const { assignmentId } = useParams();
@@ -18,12 +18,12 @@ function AssignmentEditor() {
 
   const cancelButtonStyle = {
     backgroundColor: 'gray',
-    color: 'black', // Set text color to black
+    color: 'black', 
   };
 
   const saveButtonStyle = {
     backgroundColor: 'red',
-    color: 'white', // Set text color to white
+    color: 'white', 
   };
 
   return (

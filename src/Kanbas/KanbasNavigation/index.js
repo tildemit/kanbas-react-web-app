@@ -1,20 +1,23 @@
-// KanbasNavigation.js
 import React from "react";
 import { FaUser, FaTachometerAlt, FaBook, FaCalendar, FaInbox, FaClock, FaTv, FaArrowRight, FaQuestion } from "react-icons/fa";
+import { useLocation, NavLink } from "react-router-dom";
 import "./kanbas-navigation.css";
 
 function KanbasNavigation() {
   const links = [
-    { name: "Account", icon: <FaUser style={{ color: "white" }} /> },
-    { name: "Dashboard", icon: <FaTachometerAlt style={{ color: "red" }} /> },
-    { name: "Courses", icon: <FaBook style={{ color: "red" }} /> },
-    { name: "Calendar", icon: <FaCalendar style={{ color: "red" }} /> },
-    { name: "Inbox", icon: <FaInbox style={{ color: "red" }} /> },
-    { name: "History", icon: <FaClock style={{ color: "red" }} /> },
-    { name: "Studio", icon: <FaTv style={{ color: "red" }} /> },
-    { name: "Commons", icon: <FaArrowRight style={{ color: "red" }} /> },
-    { name: "Help", icon: <FaQuestion style={{ color: "red" }} /> },
+    { name: "Account", icon: <FaUser /> },
+    { name: "Dashboard", icon: <FaTachometerAlt /> },
+    { name: "Courses", icon: <FaBook /> },
+    { name: "Calendar", icon: <FaCalendar /> },
+    { name: "Inbox", icon: <FaInbox /> },
+    { name: "History", icon: <FaClock /> },
+    { name: "Studio", icon: <FaTv /> },
+    { name: "Commons", icon: <FaArrowRight /> },
+    { name: "Help", icon: <FaQuestion /> },
   ];
+
+  const location = useLocation();
+  const currentPath = location.pathname;
 
   return (
     <div className="black-sidebar">
@@ -23,12 +26,18 @@ function KanbasNavigation() {
       </h1>
       <ul className="nav flex-column">
         {links.map((link, index) => (
-          <li className="nav-item text-center" key={index}>
-            <a href={`/Kanbas/${link.name.toLowerCase()}`} className="nav-link">
+          <li
+            className={`nav-item text-center ${currentPath.includes(link.name) ? 'white-square' : ''}`}
+            key={index}
+          >
+            <NavLink
+              to={`/Kanbas/${link.name}`}
+              className={`nav-link ${currentPath.includes(link.name) ? 'red-text' : ''}`}
+            >
               {link.icon}
               <br />
-              <span style={{ color: "white" }}>{link.name}</span>
-            </a>
+              {link.name}
+            </NavLink>
           </li>
         ))}
       </ul>

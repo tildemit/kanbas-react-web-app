@@ -1,25 +1,6 @@
 .modules {
     display: grid;
     grid-template-columns: max-content 1fr;
-    gap: 20px; /* Add some space between the buttons and modules */
+    gap: 20px; 
   }
-  
-  .module-header {
-    /* Keep your existing styles for the module header */
-  }
-  
-  .publish-button {
-    /* Remove margin-left to keep the buttons on the left side */
-  }
-  
-  .ellipsis-button {
-    /* Remove margin-left to keep the buttons on the left side */
-  }
-  
-  /* Add styles for the Status component */
-  .status {
-    /* Add any styles you need for the Status component */
-  }
-  
-  /* Add any other styles for the Status component here */
   

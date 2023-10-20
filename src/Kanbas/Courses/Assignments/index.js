@@ -12,14 +12,17 @@ function Assignments() {
 
   return (
     <div>
-        <div className="module-header">
-        <div className="d-flex justify-content-end">
-          <button className="btn" style={{ backgroundColor: "lightgray" }}>Collapse All</button>
-          <button className="btn" style={{ backgroundColor: "lightgray" }}>View Progress</button>
-          <button className="btn publish-button">
-            <FaCheckCircle className="publish-icon" /> Publish All
+      <div className="module-header">
+        <div className="d-flex justify-content-between align-items-center">
+          <input
+            type="text"
+            placeholder="Search for Assignment"
+            className="form-control mr-2"
+          />
+          <button className="btn" style={{ backgroundColor: "lightgray" }}>
+            +Group
           </button>
-          <button className="btn btn-danger">+ Module</button>
+          <button className="btn btn-danger">+Assignment</button>
           <button className="btn ellipsis-button">
             <FaEllipsisV className="ellipsis-icon" />
           </button>

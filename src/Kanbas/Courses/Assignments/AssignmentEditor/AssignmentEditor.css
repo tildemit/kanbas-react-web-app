@@ -1,28 +1,13 @@
-/* AssignmentEditor.css */
-
-/* Style for Cancel button */
 .btn-cancel {
     background-color: gray;
     color: green;
   }
   
-  /* Style for Save button */
-  .btn-save {
+.btn-save {
     background-color: red;
   }
   
-  /* Align buttons to the right */
-  .button-container {
+.button-container {
     display: flex;
     justify-content: flex-end;
   }
-  
-  /* AssignmentEditor.css */
-
-/* Style for Assignment Name */
-h2 {
-    font-size: 16px; /* Adjust the font size as needed */
-    color: black; /* Text color for Assignment Name */
-    margin-bottom: 10px; /* Add some space below the heading */
-  }
-  

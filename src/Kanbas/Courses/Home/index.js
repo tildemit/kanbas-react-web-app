@@ -1,5 +1,5 @@
 import ModuleList from "../Modules/ModuleList";
-import { FaCheckCircle, FaEllipsisV } from "react-icons/fa"; // Import the relevant icons
+import { FaCheckCircle, FaEllipsisV } from "react-icons/fa"; 
 import "./home.css"
 import Status from "./Status";
 

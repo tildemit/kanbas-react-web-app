@@ -4,7 +4,6 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import Dashboard from "./Dashboard";
 import Courses from "./Courses";
 import {Link} from "react-router-dom";
-import Nav from "../Nav";
 
 function Kanbas() {
   return (

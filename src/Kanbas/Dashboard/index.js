@@ -2,7 +2,7 @@ import React from "react";
 import db from "../Database";
 import { Link } from "react-router-dom";
 import { FaPencilAlt, FaEllipsisV } from "react-icons/fa";
-import "./dashboard.css"; // Import the CSS file
+import "./dashboard.css";
 
 function Dashboard() {
   const courses = db.courses;
@@ -18,7 +18,7 @@ function Dashboard() {
         {courses.map((course, index) => (
           <div key={index} className="card position-relative" style={{ width: "260px", margin: "15px" }}>
             <FaEllipsisV style={{ position: "absolute", top: "10px", right: "10px", color: "white"}} />
-            <div className="card-top" style={{ backgroundColor: "blue", height: "120px" }}></div> {/* Adjusted height to 120px */}
+            <div className="card-top" style={{ backgroundColor: "blue", height: "120px" }}></div>
             <Link to={`/Kanbas/Courses/${course._id}`}>
               <div className="card-body">
                 <h5 className="card-title" style={{ color: course.color }}>{course.name}</h5>

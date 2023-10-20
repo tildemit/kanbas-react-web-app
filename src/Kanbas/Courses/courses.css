@@ -8,26 +8,28 @@
   }
   
   .hamburger-icon {
-    color: red; /* Make the hamburger red */
+    color: red; 
   }
   
   .course-title {
-    color: red; /* Make the text red */
-    font-size: 1rem; /* Adjust the font size as needed */
+    color: red; 
   }
   
   .divider {
-    border: 1px solid black; /* Use a regular black border for the divider */
-    width: 100%; /* Make the divider span the entire width */
-    margin-top: 10px; /* Adjust the margin as needed */
+    border: 1px solid black; 
+    width: 100%; 
+    margin-top: 10px; 
   }
   
-
   .course-navigation-block {
-    display: block; /* Ensure it's a block-level element */
+    display: block; 
   }
   
   .custom-text-left {
     text-align: left;
   }
-  
+
+.breadcrumb-item.active {
+  color: red !important;
+}
+

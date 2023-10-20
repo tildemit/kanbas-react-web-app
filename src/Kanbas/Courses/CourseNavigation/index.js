@@ -1,8 +1,8 @@
 import React from "react";
-import { NavLink, useParams, useLocation } from "react-router-dom";
-import "./course-navigation.css"; // Updated CSS file name
+import { NavLink, useParams } from "react-router-dom";
+import "./course-navigation.css";
 
-const CourseNavigation = () => {
+const CourseNavigation = ({ selectedSection, setSelectedSection }) => {
   const links = [
     "Home",
     "Modules",
@@ -25,7 +25,10 @@ const CourseNavigation = () => {
     "Settings"
   ];
   const { courseId } = useParams();
-  const { pathname } = useLocation();
+
+  const handleNavLinkClick = (section) => {
+    setSelectedSection(section);
+  };
 
   return (
     <div className="col-md-2 d-none d-md-block">
@@ -35,6 +38,7 @@ const CourseNavigation = () => {
           to={`/Kanbas/Courses/${courseId}/${link}`}
           activeClassName="active"
           className="home-link"
+          onClick={() => handleNavLinkClick(link)}
         >
           {link}
         </NavLink>

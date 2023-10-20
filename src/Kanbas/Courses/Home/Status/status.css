@@ -1,7 +1,6 @@
-/* Add your existing CSS styles here. */
 .status-section {
     float: right;
-    width: calc(100% - 250px); /* Adjust the width as needed */
+    width: calc(100% - 250px);
   }
   
   .button-bar {
@@ -13,13 +12,47 @@
   
   .upcoming-item {
     margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
   }
   
   .calendar-icon {
     position: absolute;
     top: 0;
-    transform: translateY(0);
     left: 0;
     color: black;
   }
+  
+  .todo-section h6,
+  .coming-up h6 {
+    color: black;
+    white-space: nowrap;
+  }
+  
+  hr {
+    border: 1px solid #000;
+  }
+  
+  .more-items {
+    color: black;
+    white-space: nowrap;
+    margin-top: 10px;
+  }
+  
+  .todo-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+  }
+  
+  .todo-item .text-danger {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+  }
+
   
