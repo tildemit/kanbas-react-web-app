@@ -30,14 +30,19 @@ function KanbasNavigation() {
             className={`nav-item text-center ${currentPath.includes(link.name) ? 'white-square' : ''}`}
             key={index}
           >
-            <NavLink
-              to={`/Kanbas/${link.name}`}
-              className={`nav-link ${currentPath.includes(link.name) ? 'red-text' : ''}`}
-            >
-              {link.icon}
-              <br />
-              {link.name}
-            </NavLink>
+            {link.name === "Courses" ? (
+              <NavLink to="/Kanbas/Courses/RS101/Home" className={`nav-link ${currentPath.includes(link.name) ? 'red-text' : ''}`}>
+                {link.icon}
+                <br />
+                {link.name}
+              </NavLink>
+            ) : (
+              <NavLink to={`/Kanbas/${link.name}`} className={`nav-link ${currentPath.includes(link.name) ? 'red-text' : ''}`}>
+                {link.icon}
+                <br />
+                {link.name}
+              </NavLink>
+            )}
           </li>
         ))}
       </ul>

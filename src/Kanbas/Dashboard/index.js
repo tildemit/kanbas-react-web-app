@@ -19,7 +19,7 @@ function Dashboard() {
           <div key={index} className="card position-relative" style={{ width: "260px", margin: "15px" }}>
             <FaEllipsisV style={{ position: "absolute", top: "10px", right: "10px", color: "white"}} />
             <div className="card-top" style={{ backgroundColor: "blue", height: "120px" }}></div>
-            <Link to={`/Kanbas/Courses/${course._id}`}>
+            <Link to={`/Kanbas/Courses/${course._id}`} className="card-link">
               <div className="card-body">
                 <h5 className="card-title" style={{ color: course.color }}>{course.name}</h5>
                 <p className="card-text">{course.code}</p>

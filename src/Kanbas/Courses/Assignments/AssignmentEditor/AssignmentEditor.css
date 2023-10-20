@@ -1,13 +1,25 @@
-.btn-cancel {
-    background-color: gray;
-    color: green;
-  }
-  
-.btn-save {
-    background-color: red;
-  }
-  
-.button-container {
-    display: flex;
-    justify-content: flex-end;
-  }
+.editor-container {
+  position: relative;
+}
+
+.top-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.published-icon {
+  color: green;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.published-text {
+  color: green;
+}
+
+ellipsis-icon {
+  color: #333;
+  font-size: 24px;
+  margin-left: 10px;
+}

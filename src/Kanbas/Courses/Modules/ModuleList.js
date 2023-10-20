@@ -13,7 +13,7 @@ function ModuleList() {
       {modules
         .filter((module) => module.course === courseId)
         .map((module, index) => (
-          <li key={index} className="list-group-item list-group-item-secondary d-flex justify-content-between">
+          <li key={index} className="list-group-item list-group-item-secondary d-flex justify-content-between" style={{ marginBottom: "50px" }}>
             <div className="d-flex align-items-center">
               <FaGripVertical />
               <span style={{ marginLeft: "10px" }}>{module.name}</span>

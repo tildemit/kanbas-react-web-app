@@ -50,3 +50,6 @@
     content: ">";
   }
   
+  .card-link {
+    text-decoration: none;
+  }
