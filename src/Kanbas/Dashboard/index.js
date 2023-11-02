@@ -13,7 +13,10 @@ function Dashboard(
     <div className="col-md-10">
       <h2>Dashboard</h2>
       <hr />
-      <h5>Course</h5>
+
+      <h3>Published Courses (24)</h3>
+      <hr />
+      <h5>New Course</h5>
       <input
         value={course.name}
         className="form-control" 
@@ -49,8 +52,6 @@ function Dashboard(
       >
         Update
       </button>
-
-      <h3>Published Courses (24)</h3>
 
       <div className="d-flex flex-row flex-wrap">
         {courses.map((course, index) => (

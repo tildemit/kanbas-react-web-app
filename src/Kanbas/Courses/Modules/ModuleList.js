@@ -53,25 +53,30 @@ function ModuleList() {
           <li
             key={index}
             className="list-group-item list-group-item-secondary d-flex justify-content-between"
-            style={{ marginBottom: "50px" }}
           >
-            <div className="d-flex align-items-center">
-              <FaGripVertical />
-              <button
-                className="btn btn-info"
-                onClick={() => dispatch(setModule(module))
+            <div className="d-flex flex-column">
+              <div className="d-flex align-items-center">
+                <FaGripVertical />
+                <button
+                  className="btn btn-info"
+                  onClick={() => dispatch(setModule(module))
                 }>
-                Edit
-              </button>
+                  Edit
+                </button>
 
-              <button
-                className="btn btn-danger"
-                onClick={() => dispatch(deleteModule(module._id))
+                <button
+                  className="btn btn-danger"
+                  onClick={() => dispatch(deleteModule(module._id))
                 }>
-                Delete
-              </button>
+                  Delete
+                </button>
 
-              <span style={{ marginLeft: "10px" }}>{module.name}</span>
+                <span style={{ marginLeft: "10px" }}>{module.name}</span>
+              </div>
+              <hr />
+              <div>
+                {module.description}
+              </div>
             </div>
             <div>
               <FaCheckCircle style={{ marginRight: "10px", color: "green" }} />
