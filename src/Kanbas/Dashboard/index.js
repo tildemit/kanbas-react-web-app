@@ -14,18 +14,41 @@ function Dashboard(
       <h2>Dashboard</h2>
       <hr />
       <h5>Course</h5>
-      <input value={course.name} className="form-control" onChange={(e) => setCourse({ ...course, name: e.target.value }) } />
-      <input value={course.number} className="form-control" onChange={(e) => setCourse({ ...course, number: e.target.value }) } />
-      <input value={course.startDate} className="form-control" type="date" onChange={(e) => setCourse({ ...course, startDate: e.target.value }) } />
-      <input value={course.endDate} className="form-control" type="date" onChange={(e) => setCourse({ ...course, endDate: e.target.value }) } />
+      <input
+        value={course.name}
+        className="form-control" 
+        onChange={(e) => setCourse({ ...course, name: e.target.value })}
+      />
+      <input
+        value={course.number}
+        className="form-control" 
+        onChange={(e) => setCourse({ ...course, number: e.target.value })}
+      />
+      <input
+        value={course.startDate}
+        className="form-control" 
+        type="date"
+        onChange={(e) => setCourse({ ...course, startDate: e.target.value })}
+      />
+      <input
+        value={course.endDate}
+        className="form-control" 
+        type="date"
+        onChange={(e) => setCourse({ ...course, endDate: e.target.value })}
+      />
 
-      <button onClick={addNewCourse} >
+      <button
+        className="btn btn-primary" 
+        onClick={addNewCourse}
+      >
         Add
       </button>
-      <button onClick={updateCourse} >
+      <button
+        className="btn btn-success" 
+        onClick={updateCourse}
+      >
         Update
       </button>
-
 
       <h3>Published Courses (24)</h3>
 
@@ -41,21 +64,24 @@ function Dashboard(
                 <p className="card-text">{course.term}</p>
                 <FaPencilAlt />
                 <button
-              onClick={(event) => {
-                event.preventDefault();
-                setCourse(course);
-              }}>
-              Edit
-            </button>
+                  className="btn btn-info" 
+                  onClick={(event) => {
+                    event.preventDefault();
+                    setCourse(course);
+                  }}
+                >
+                  Edit
+                </button>
 
                 <button
-              onClick={(event) => {
-                event.preventDefault();
-                deleteCourse(course._id);
-              }}>
-              Delete
-            </button>
-
+                  className="btn btn-danger" 
+                  onClick={(event) => {
+                    event.preventDefault();
+                    deleteCourse(course._id);
+                  }}
+                >
+                  Delete
+                </button>
               </div>
             </Link>
           </div>
