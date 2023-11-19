@@ -31,18 +31,18 @@ function KanbasNavigation() {
             key={index}
           >
             {link.name === "Courses" ? (
-              <NavLink to="/Kanbas/Courses/RS101/Home" className={`nav-link ${currentPath.includes(link.name) ? 'red-text' : ''}`}>
-                {link.icon}
-                <br />
-                {link.name}
-              </NavLink>
-            ) : (
-              <NavLink to={`/Kanbas/${link.name}`} className={`nav-link ${currentPath.includes(link.name) ? 'red-text' : ''}`}>
-                {link.icon}
-                <br />
-                {link.name}
-              </NavLink>
-            )}
+  <NavLink to="#" onClick={(e) => { e.preventDefault(); window.location.href = window.location.href; }} className={`nav-link ${currentPath.includes(link.name) ? 'red-text' : ''}`}>
+    {link.icon}
+    <br />
+    {link.name}
+  </NavLink>
+) : (
+  <NavLink to={`/Kanbas/${link.name}`} className={`nav-link ${currentPath.includes(link.name) ? 'red-text' : ''}`}>
+    {link.icon}
+    <br />
+    {link.name}
+  </NavLink>
+)}
           </li>
         ))}
       </ul>
