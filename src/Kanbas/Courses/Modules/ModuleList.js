@@ -54,7 +54,7 @@ function ModuleList() {
         </button>
         <button
           className="btn btn-success"
-          onClick={() => dispatch(updateModule(module))
+          onClick={handleUpdateModule
           }>
           Update
         </button>
