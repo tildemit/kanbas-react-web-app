@@ -22,12 +22,12 @@ const modulesSlice = createSlice({
 
     deleteModule: (state, action) => {
       state.modules = state.modules.filter(
-        (module) => module._id !== action.payload
+        (module) => module._mid !== action.payload
       );
     },
     updateModule: (state, action) => {
       state.modules = state.modules.map((module) => {
-        if (module._id === action.payload._id) {
+        if (module._mid === action.payload._mid) {
           return action.payload;
         } else {
           return module;

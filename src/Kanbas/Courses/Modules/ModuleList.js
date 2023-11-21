@@ -74,7 +74,6 @@ function ModuleList() {
       </li>
 
       {modules
-        .filter((module) => module.course === courseId)
         .map((module, index) => (
           <li
             key={index}
@@ -92,7 +91,7 @@ function ModuleList() {
 
                 <button
                   className="btn btn-danger"
-                  onClick={() => handleDeleteModule(module._id)
+                  onClick={() => handleDeleteModule(module._mid)
                 }>
                   Delete
                 </button>
