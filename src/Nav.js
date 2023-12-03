@@ -17,31 +17,18 @@ function Nav() {
   return (
     <nav className="nav nav-tabs mt-2">
       <Link
-        to="/Labs/a3"
-        className={`nav-link ${pathname.includes("a3") ? "active" : ""}`}
+        to="/Kanbas/signup"
+        className={`nav-link ${pathname.includes("Kanbas/signup") ? "active" : ""}`}
         style={linkStyle}
       >
-        <span>A3</span>
-      </Link>
-      <Link 
-      to="/Labs/a4"
-      className={`nav-link ${pathname.includes("a4") ? "active" : ""}`}
-      style={linkStyle}>
-       <span>A4</span>
-       </Link>
-      <Link
-        to="/hello"
-        className={`nav-link ${pathname.includes("hello") ? "active" : ""}`}
-        style={linkStyle}
-      >
-        <span>Hello</span>
+        <span>Kanbas Signup</span>
       </Link>
       <Link
-        to="/Kanbas"
-        className={`nav-link ${pathname.includes("Kanbas") ? "active" : ""}`}
+        to="/Kanbas/signin"
+        className={`nav-link ${pathname.includes("Kanbas/signin") ? "active" : ""}`}
         style={linkStyle}
       >
-        <span>Kanbas</span>
+        <span>Kanbas Signin</span>
       </Link>
     </nav>
   );
